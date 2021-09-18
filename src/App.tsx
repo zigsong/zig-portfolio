@@ -1,13 +1,16 @@
 import React from 'react';
-
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import GlobalStyle from './Global.styles';
+import Intro from 'components/Intro';
 
 const App = () => {
   return (
-    <>
+    <Router>
       <GlobalStyle />
-      안녕하세요, 개발자 송지은입니다.
-    </>
+      <Switch>
+        <Intro />
+      </Switch>
+    </Router>
   );
 };
 

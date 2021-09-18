@@ -1,0 +1,9 @@
+const PALETTE = {
+  PRIMARY_VIOLET_BG: '#F2ECFF',
+  PRIMARY_VIOLET_HIGHLIGHT: '#D5C2FF',
+
+  DEFAULT_WHITE: '#ffffff',
+  DEFAULT_BEIGE: '#FFFBF5',
+};
+
+export default PALETTE;

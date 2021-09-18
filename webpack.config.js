@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -25,12 +26,11 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        test: /\.(png|jpe?g|gif|webp|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'static/[name][ext]',
+        },
       },
     ],
   },
@@ -41,6 +41,9 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: './public/index.html',
+    }),
+    new CopyPlugin({
+      patterns: [{ from: './public/fonts/*', to: 'fonts/[name][ext]' }],
     }),
   ],
   devServer: {

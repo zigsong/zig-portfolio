@@ -1,17 +1,35 @@
 import { createGlobalStyle } from 'styled-components';
 
+import PALETTE from 'constants/palette';
+
 const GlobalStyle = createGlobalStyle`  
-  @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Medium.woff');
+  @font-face {
+    font-family: 'IBM Plex Sans KR';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('./fonts/IBMPlexSansKR-Regular.woff2') format('woff2'),
+    local('👾');
+  };
+
+  @font-face {
+    font-family: 'IBM Plex Sans KR';
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: url('./fonts/IBMPlexSansKR-Bold.woff2') format('woff2'),
+    local('👾');
+  };
 
   html, body {
-    overflow: auto;
+    background-color: ${PALETTE.PRIMARY_VIOLET_BG};
   }
-
+  
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'IBMPlexSansKR', sans-serif;
+    font-family: 'IBM Plex Sans KR', sans-serif;
   }
 
   a {
