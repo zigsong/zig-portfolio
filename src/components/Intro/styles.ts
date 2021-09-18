@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components';
 
-import introBg from 'assets/intro-bg.svg';
+import introBg from 'assets/intro-bg.png';
 import PALETTE from 'constants/palette';
 
-const Root = styled.div`
+const Root = styled.section`
   background-image: url(${introBg});
   background-size: cover;
   height: 32rem;
@@ -12,7 +12,7 @@ const Root = styled.div`
 
 const Content = styled.div`
   height: 100%;
-  max-width: 960px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

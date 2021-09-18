@@ -1,15 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import GlobalStyle from './Global.styles';
 import Intro from 'components/Intro';
+import Terminal from 'components/Terminal';
 
 const App = () => {
   return (
     <Router>
       <GlobalStyle />
-      <Switch>
-        <Intro />
-      </Switch>
+      <Intro />
+      <Terminal />
     </Router>
   );
 };

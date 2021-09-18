@@ -21,8 +21,17 @@ const GlobalStyle = createGlobalStyle`
     local('👾');
   };
 
+  @font-face {
+    font-family: 'D2 Coding';
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: url('./fonts/D2Coding.woff2') format('woff2'),
+    local('👾');
+  };
+
   html, body {
-    background-color: ${PALETTE.PRIMARY_VIOLET_BG};
+    background-color: ${PALETTE.DEFAULT_BEIGE};
   }
   
   * {
@@ -44,6 +53,7 @@ const GlobalStyle = createGlobalStyle`
   button {
     background: transparent;
     outline: none;
+    cursor: pointer;
   }
 
   input, textarea {

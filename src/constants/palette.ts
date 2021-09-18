@@ -4,6 +4,13 @@ const PALETTE = {
 
   DEFAULT_WHITE: '#ffffff',
   DEFAULT_BEIGE: '#FFFBF5',
+
+  BUTTON_RED: '#FF5F5A',
+  BUTTON_YELLOW: '#FFBE2E',
+  BUTTON_GREEN: '#2ACA44',
+
+  TERMINAL_BLACK: '#2D2A2E',
+  CMD_WHITE: '#F8F8F6',
 };
 
 export default PALETTE;
