@@ -41,7 +41,7 @@ const Intro = () => {
               <NavLink
                 to={`/${ROUTES.SKILLSET}`}
                 activeStyle={navLinkActiveStyle}
-                isActive={() => window.location.hash === ROUTES.ABOUT}
+                isActive={() => window.location.hash === ROUTES.SKILLSET}
               >
                 Skillsets
               </NavLink>

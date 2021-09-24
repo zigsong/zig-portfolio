@@ -40,7 +40,7 @@ const CommandContainer = styled.div`
   }
 `;
 
-const Command = styled.div`
+const Command = styled.span`
   * {
     font-size: 1.25rem;
   }
@@ -73,13 +73,33 @@ const scaling = keyframes`
   }
 `;
 
-const CursorButton = styled.button`
+const CursorButton = styled.button<{ isShowing: boolean }>`
+  display: ${({ isShowing }) => (isShowing ? 'block' : 'none')};
   background-color: ${PALETTE.PRIMARY_VIOLET_BG};
   margin-left: 0.5rem;
   color: ${PALETTE.TERMINAL_BLACK};
   padding: 0.25rem 0.5rem;
   border: none;
   animation: ${scaling} 1s linear infinite;
+`;
+
+const LinesContainer = styled.div`
+  margin-top: 1.5rem;
+`;
+
+const Line = styled.div`
+  * {
+    font-size: 1.25rem;
+  }
+
+  &::before {
+    content: '>';
+    display: inline-block;
+    color: ${PALETTE.CMD_FUCHSIA};
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0.35rem;
+  }
 `;
 
 export default {
@@ -90,4 +110,6 @@ export default {
   Command,
   Cursor,
   CursorButton,
+  LinesContainer,
+  Line,
 };

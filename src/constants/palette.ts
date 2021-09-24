@@ -11,6 +11,7 @@ const PALETTE = {
 
   TERMINAL_BLACK: '#2D2A2E',
   CMD_WHITE: '#F8F8F6',
+  CMD_FUCHSIA: '#FF6188',
 };
 
 export default PALETTE;
