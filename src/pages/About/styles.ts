@@ -29,7 +29,6 @@ const Contact = styled.div`
     margin-bottom: 24px;
     width: fit-content;
     margin-left: auto;
-    padding-left: 12px;
     border-bottom: 1px solid ${PALETTE.TERMINAL_BLACK};
   }
 
@@ -68,7 +67,6 @@ const Archive = styled.div`
     font-weight: 700;
     margin-bottom: 24px;
     width: fit-content;
-    padding-right: 12px;
     border-bottom: 1px solid ${PALETTE.TERMINAL_BLACK};
   }
 
