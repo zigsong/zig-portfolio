@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import Intro from 'components/Intro';
 import Terminal from 'components/Terminal';
-import About from 'components/About';
+import Intro from 'pages/Intro';
+import About from 'pages/About';
+import Skillsets from 'pages/Skillsets';
 import GlobalStyle from './Global.styles';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Intro />
       <Terminal />
       <About />
+      <Skillsets />
     </Router>
   );
 };
