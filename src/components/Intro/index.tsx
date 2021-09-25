@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import Styled from './styles';
 import ROUTES from 'constants/routes';
 import PALETTE from 'constants/palette';
+import Styled from './styles';
 
 const navLinkActiveStyle = {
   borderBottom: `2px solid ${PALETTE.DEFAULT_WHITE}`,

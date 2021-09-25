@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import GlobalStyle from './Global.styles';
+
 import Intro from 'components/Intro';
 import Terminal from 'components/Terminal';
+import About from 'components/About';
+import GlobalStyle from './Global.styles';
 
 const App = () => {
   return (
@@ -10,6 +12,7 @@ const App = () => {
       <GlobalStyle />
       <Intro />
       <Terminal />
+      <About />
     </Router>
   );
 };
