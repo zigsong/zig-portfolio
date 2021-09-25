@@ -31,28 +31,30 @@ const Terminal = () => {
 
   return (
     <Styled.Root>
-      <Styled.DotButtonsContainer>
-        <Styled.DotButton color={PALETTE.BUTTON_RED} />
-        <Styled.DotButton color={PALETTE.BUTTON_YELLOW} />
-        <Styled.DotButton color={PALETTE.BUTTON_GREEN} />
-      </Styled.DotButtonsContainer>
-      <Styled.CommandContainer>
-        <Styled.Command> zig</Styled.Command>
-        <img src={terminalArrow} alt="terminal-arrow" />
-        <Styled.Command>$ whoami</Styled.Command>
-        <Styled.Cursor />
-        <Styled.CursorButton isShowing={isCTAShowing} onClick={handleClickCTA}>
-          ⬅️ Click Here!
-        </Styled.CursorButton>
-      </Styled.CommandContainer>
-      {!isCTAShowing && (
-        <Styled.LinesContainer>
-          {currentLine >= 1 && <Styled.Line>협업의 가치를 알고 실천합니다.</Styled.Line>}
-          {currentLine >= 2 && <Styled.Line>꾸준함의 힘을 믿습니다.</Styled.Line>}
-          {currentLine >= 3 && <Styled.Line>새로운 일에 도전합니다.</Styled.Line>}
-          {currentLine >= 4 && <Styled.Line>필요한 사람이 되고자 힘씁니다.</Styled.Line>}
-        </Styled.LinesContainer>
-      )}
+      <Styled.Container>
+        <Styled.DotButtonsContainer>
+          <Styled.DotButton color={PALETTE.BUTTON_RED} />
+          <Styled.DotButton color={PALETTE.BUTTON_YELLOW} />
+          <Styled.DotButton color={PALETTE.BUTTON_GREEN} />
+        </Styled.DotButtonsContainer>
+        <Styled.CommandContainer>
+          <Styled.Command> zig</Styled.Command>
+          <img src={terminalArrow} alt="terminal-arrow" />
+          <Styled.Command>$ whoami</Styled.Command>
+          <Styled.Cursor />
+          <Styled.CursorButton isShowing={isCTAShowing} onClick={handleClickCTA}>
+            ⬅️ Click Here!
+          </Styled.CursorButton>
+        </Styled.CommandContainer>
+        {!isCTAShowing && (
+          <Styled.LinesContainer>
+            {currentLine >= 1 && <Styled.Line>협업의 가치를 알고 실천합니다.</Styled.Line>}
+            {currentLine >= 2 && <Styled.Line>꾸준함의 힘을 믿습니다.</Styled.Line>}
+            {currentLine >= 3 && <Styled.Line>새로운 일에 도전합니다.</Styled.Line>}
+            {currentLine >= 4 && <Styled.Line>필요한 사람이 되고자 힘씁니다.</Styled.Line>}
+          </Styled.LinesContainer>
+        )}
+      </Styled.Container>
     </Styled.Root>
   );
 };
