@@ -10,6 +10,7 @@ import pencilSvg from 'assets/pencil.svg';
 import ROUTES from 'constants/routes';
 import Styled from './styles';
 
+// REFACTOR: 반응형
 const About = () => {
   return (
     <Styled.Root>

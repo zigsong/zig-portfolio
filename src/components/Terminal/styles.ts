@@ -15,7 +15,7 @@ const Root = styled.section`
 
 const Container = styled.div`
   position: relative;
-  max-width: 840px;
+  max-width: 960px;
   margin: 0 auto;
   background-color: ${PALETTE.TERMINAL_BLACK};
   min-height: 20rem;

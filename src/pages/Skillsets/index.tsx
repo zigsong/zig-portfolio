@@ -1,10 +1,10 @@
 import React from 'react';
 
+import ROUTES from 'constants/routes';
 import Card from 'components/Card';
 import LinkedTitle from 'components/LinkedTitle';
-import ROUTES from 'constants/routes';
-import Styled from './styles';
 import TechChip from 'components/TechChip';
+import Styled from './styles';
 
 const Skillsets = () => {
   return (
