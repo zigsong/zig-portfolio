@@ -14,7 +14,7 @@ import Styled from './styles';
 const Career = () => {
   return (
     <Styled.Root>
-      <LinkedTitle text={'Career'} link={`/${ROUTES.CAREER}`} />
+      <LinkedTitle id={ROUTES.CAREER} text="Career" link={`/#${ROUTES.CAREER}`} />
       <Card>
         <Styled.Container>
           <Styled.Tree />

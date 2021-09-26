@@ -74,22 +74,7 @@ const NavContainer = styled.ul`
     font-size: 1.5rem;
     position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: ${PALETTE.DEFAULT_WHITE};
-      transform-origin: bottom center;
-      transition: transform 0.1s ease-out;
-    }
-
-    &:hover::after {
-      transform: scaleX(1);
-    }
+    ${hoverUnderline}
   }
 `;
 

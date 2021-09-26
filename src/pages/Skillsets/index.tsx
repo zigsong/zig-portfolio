@@ -9,7 +9,7 @@ import Styled from './styles';
 const Skillsets = () => {
   return (
     <Styled.Root>
-      <LinkedTitle text={'Skillsets'} link={`/${ROUTES.SKILLSET}`} />
+      <LinkedTitle id={ROUTES.SKILLSET} text="Skillsets" link={`/#${ROUTES.SKILLSET}`} />
       <Card>
         <Styled.Container>
           <Styled.Sortation>

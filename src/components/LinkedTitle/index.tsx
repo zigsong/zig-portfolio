@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import linkSvg from 'assets/link.svg';
 import Styled from './styles';
@@ -7,14 +7,15 @@ import Styled from './styles';
 interface Props {
   text: string;
   link: string;
+  id: string;
 }
 
-const LinkedTitle = ({ text, link }: Props) => {
+const LinkedTitle = ({ text, link, id }: Props) => {
   return (
-    <Styled.Root>
-      <Link to={link}>
+    <Styled.Root id={id}>
+      <HashLink smooth to={link}>
         <img src={linkSvg} alt={`link-${text}`} />
-      </Link>
+      </HashLink>
       <Styled.Title>{text}</Styled.Title>
     </Styled.Root>
   );

@@ -1,14 +1,8 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import ROUTES from 'constants/routes';
-import PALETTE from 'constants/palette';
 import Styled from './styles';
-
-const navLinkActiveStyle = {
-  borderBottom: `2px solid ${PALETTE.DEFAULT_WHITE}`,
-  fontWeight: 700,
-};
 
 const Intro = () => {
   return (
@@ -29,49 +23,29 @@ const Intro = () => {
         <nav>
           <Styled.NavContainer>
             <li>
-              <NavLink
-                to={`/${ROUTES.ABOUT}`}
-                activeStyle={navLinkActiveStyle}
-                isActive={() => window.location.hash === ROUTES.ABOUT}
-              >
+              <HashLink smooth to={`/#${ROUTES.ABOUT}`}>
                 About Me
-              </NavLink>
+              </HashLink>
             </li>
             <li>
-              <NavLink
-                to={`/${ROUTES.SKILLSET}`}
-                activeStyle={navLinkActiveStyle}
-                isActive={() => window.location.hash === ROUTES.SKILLSET}
-              >
+              <HashLink smooth to={`/#${ROUTES.SKILLSET}`}>
                 Skillsets
-              </NavLink>
+              </HashLink>
             </li>
             <li>
-              <NavLink
-                to={`/${ROUTES.CAREER}`}
-                activeStyle={navLinkActiveStyle}
-                isActive={() => window.location.hash === ROUTES.CAREER}
-              >
+              <HashLink smooth to={`/#${ROUTES.CAREER}`}>
                 Career
-              </NavLink>
+              </HashLink>
             </li>
             <li>
-              <NavLink
-                to={`/${ROUTES.PROJECTS}`}
-                activeStyle={navLinkActiveStyle}
-                isActive={() => window.location.hash === ROUTES.PROJECTS}
-              >
+              <HashLink smooth to={`/#${ROUTES.PROJECTS}`}>
                 Projects
-              </NavLink>
+              </HashLink>
             </li>
             <li>
-              <NavLink
-                to={`/${ROUTES.WORK}`}
-                activeStyle={navLinkActiveStyle}
-                isActive={() => window.location.hash === ROUTES.WORK}
-              >
+              <HashLink smooth to={`/#${ROUTES.WORK}`}>
                 Work Experience
-              </NavLink>
+              </HashLink>
             </li>
           </Styled.NavContainer>
         </nav>

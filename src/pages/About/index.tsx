@@ -14,7 +14,7 @@ import Styled from './styles';
 const About = () => {
   return (
     <Styled.Root>
-      <LinkedTitle text={'About'} link={`/${ROUTES.ABOUT}`} />
+      <LinkedTitle id={ROUTES.ABOUT} text="About" link={`/#${ROUTES.ABOUT}`} />
       <Card>
         <Styled.Container>
           <Styled.Contact>
