@@ -5,8 +5,9 @@ import Terminal from 'components/Terminal';
 import Intro from 'pages/Intro';
 import About from 'pages/About';
 import Skillsets from 'pages/Skillsets';
-import GlobalStyle from './Global.styles';
 import Career from 'pages/Career';
+import Projects from 'pages/Projects';
+import GlobalStyle from './Global.styles';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <About />
       <Skillsets />
       <Career />
+      <Projects />
     </Router>
   );
 };
