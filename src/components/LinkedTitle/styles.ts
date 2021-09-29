@@ -33,13 +33,13 @@ const Root = styled.h2`
     width: 100%;
     height: 10px;
     border-radius: 2px;
-    z-index: 10;
   }
 `;
 
 const Title = styled.span`
   font-weight: 700;
   font-size: 36px;
+  z-index: 20;
 `;
 
 export default { Root, Title };

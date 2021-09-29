@@ -4,7 +4,6 @@ import PALETTE from 'constants/palette';
 
 const Root = styled.section`
   padding: 20px 0 48px;
-  max-height: 32rem;
   display: flex;
   flex-direction: column;
   align-items: center;

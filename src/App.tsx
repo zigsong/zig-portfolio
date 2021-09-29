@@ -7,6 +7,7 @@ import About from 'pages/About';
 import Skillsets from 'pages/Skillsets';
 import Career from 'pages/Career';
 import Projects from 'pages/Projects';
+import WorkExperience from 'pages/WorkExperience';
 import GlobalStyle from './Global.styles';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <Skillsets />
       <Career />
       <Projects />
+      <WorkExperience />
     </Router>
   );
 };

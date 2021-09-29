@@ -32,6 +32,8 @@ const GlobalStyle = createGlobalStyle`
 
   html, body {
     background-color: ${PALETTE.DEFAULT_BEIGE};
+    width: 100%;
+    height: 100%;
   }
   
   * {

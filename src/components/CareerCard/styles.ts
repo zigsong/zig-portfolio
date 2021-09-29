@@ -44,7 +44,6 @@ const Branch = styled.div<{ position: 'left' | 'right' }>`
 
 const CardContainer = styled.div`
   background: ${PALETTE.DEFAULT_WHITE};
-  /* border: 2px solid ${PALETTE.PRIMARY_VIOLET_HIGHLIGHT}; */
   width: 100%;
   border-radius: 8px;
   padding: 1rem;
