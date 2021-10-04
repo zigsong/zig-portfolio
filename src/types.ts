@@ -7,5 +7,6 @@ export interface ModalContent {
   intro: string;
   members: string[];
   roles: string[];
+  learnings: string[];
   previews: string[];
 }

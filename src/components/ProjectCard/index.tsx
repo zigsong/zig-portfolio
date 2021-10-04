@@ -1,8 +1,8 @@
+import React, { useState } from 'react';
+
 import ModalPortal from 'components/ModalPortal';
 import ProjectModal from 'components/ProjectModal';
-import React, { useState } from 'react';
 import { ModalContent } from 'types';
-
 import Styled, { Stack } from './styles';
 
 interface Props {

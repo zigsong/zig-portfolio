@@ -39,11 +39,13 @@ const WorkCard = ({ image, title, period, intro, stacks, mains, learnings, site 
             <Styled.Branch />
             <Styled.Content>
               <Styled.CategoryTitle>사용 스택</Styled.CategoryTitle>
-              <div>
+              <Styled.StacksContainer>
                 {stacks.map((stack, idx) => (
-                  <Stack key={idx} text={stack} />
+                  <li key={idx}>
+                    <Stack key={idx} text={stack} />
+                  </li>
                 ))}
-              </div>
+              </Styled.StacksContainer>
             </Styled.Content>
           </div>
           <div>

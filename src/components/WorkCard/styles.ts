@@ -9,40 +9,6 @@ const Container = styled.div`
   display: flex;
 `;
 
-const Subtitle = styled.div`
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding: 0 8px;
-  transform: translateY(15px);
-  z-index: 10;
-
-  & a {
-    height: 28px;
-    transition: transform 0.1s ease;
-
-    & img {
-      padding: 0 2px;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    display: block;
-    bottom: 5px;
-    left: 0;
-    background-color: ${PALETTE.PRIMARY_VIOLET_HIGHLIGHT};
-    width: 100%;
-    height: 10px;
-    border-radius: 2px;
-  }
-`;
-
 const ImageWrapper = styled.div`
   width: 152px;
   height: 152px;
@@ -130,6 +96,12 @@ const CategoryTitle = styled.div`
   }
 `;
 
+const StacksContainer = styled.ul`
+  & li {
+    display: inline-block;
+  }
+`;
+
 export const Stack = styled(TechChip)`
   display: inline-block;
   color: ${PALETTE.PRIMARY_VIOLET_HIGHLIGHT};
@@ -153,10 +125,10 @@ export default {
   ProfileContent,
   Title,
   Period,
-  Subtitle,
   Tree,
   Branch,
   Content,
   CategoryTitle,
+  StacksContainer,
   CheckList,
 };

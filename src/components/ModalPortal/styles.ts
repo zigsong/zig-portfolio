@@ -14,6 +14,7 @@ const fadein = keyframes`
 const ModalContainer = styled.div`
   position: fixed;
   display: flex;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100vw;
@@ -25,10 +26,12 @@ const ModalContainer = styled.div`
 
 const ModalInner = styled.div`
   position: relative;
-  margin: auto;
+  margin: auto 2rem;
   display: inline-block;
-  min-width: 560px;
-  min-height: 480px;
+  max-width: 840px;
+  max-height: 660px;
+  width: 100%;
+  height: 100%;
   background-color: ${PALETTE.DEFAULT_WHITE};
   border-radius: 8px;
   padding: 2.75rem;
