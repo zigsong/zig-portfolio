@@ -11,7 +11,7 @@ const Root = styled.div`
   position: relative;
   overflow: hidden;
 
-  & > a {
+  & > .card-modal-link {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,6 +19,11 @@ const Root = styled.div`
     bottom: 0;
     width: 100%;
     height: 100%;
+    cursor: pointer;
+
+    &:hover img {
+      transform: scale(1.1);
+    }
   }
 `;
 
@@ -37,6 +42,7 @@ const ImageWrapper = styled.div`
   & img {
     width: 100%;
     height: 100%;
+    transition: transform 0.2s ease;
   }
 `;
 

@@ -1,0 +1,22 @@
+export const noltoModal = {
+  id: 1,
+  title: '놀토: 놀러오세요 토이프로젝트',
+  stacks: ['TypeScript', 'React.js', 'Java', 'Springboot'],
+  githubUrl: 'https://github.com/woowacourse-teams/2021-nolto',
+  deployUrl: 'https://nolto.app/',
+  intro: '모두의 작고 소중한 토이프로젝트를 한눈에, 놀러오세요 토이프로젝트!',
+  members: ['우아한테크코스 3기 BE 교육생 4인', '우아한테크코스 3기 FE 교육생 2인'],
+  roles: [
+    'UI 디자인 전체',
+    '제목/태그 검색 기능',
+    '피드 검색 필터링 기능',
+    '인기 태그 리스팅',
+    '태그 자동완성 기능',
+    '마이페이지 구현 및 알림 기능',
+    '카카오톡 공유 기능',
+    '피드 업로드 시 마크다운 기능',
+    'hook 테스트 및 컴포넌트 테스트 작성',
+    '반응형 UI 구현',
+  ],
+  previews: ['aaa'],
+};
