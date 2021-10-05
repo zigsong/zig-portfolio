@@ -15,9 +15,9 @@ const Intro = () => {
             개발자 송지은입니다.
           </Styled.TitleText>
           <Styled.IntroText>
-            <span className="bold">정</span>도 <span className="bold">고민</span>도{' '}
+            <span className="bold">정</span>도 <span className="bold">궁금한 것</span>도{' '}
             <span className="bold">하고싶은 일</span>도 많습니다. <br />
-            조금 느려도 지치지 않고 쉼없이 달리는 중입니다.
+            빨리 가기보다는, 지치지 않고 멀리 가는 개발자의 삶을 꿈꿉니다.
           </Styled.IntroText>
         </Styled.IntroPannel>
         <nav>

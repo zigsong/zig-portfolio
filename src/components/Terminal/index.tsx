@@ -48,10 +48,47 @@ const Terminal = () => {
         </Styled.CommandContainer>
         {!isCTAShowing && (
           <Styled.LinesContainer>
-            {currentLine >= 1 && <Styled.Line>협업의 가치를 알고 실천합니다.</Styled.Line>}
-            {currentLine >= 2 && <Styled.Line>꾸준함의 힘을 믿습니다.</Styled.Line>}
-            {currentLine >= 3 && <Styled.Line>새로운 일에 도전합니다.</Styled.Line>}
-            {currentLine >= 4 && <Styled.Line>필요한 사람이 되고자 힘씁니다.</Styled.Line>}
+            {currentLine >= 1 && (
+              <Styled.Line>
+                <span className="bold-text">협업의 가치를 알고 실천합니다.</span>
+                <br />
+                <span>
+                  빨리 가려면 혼자 가고, 멀리 가려면 함께 가야 합니다. <br />
+                  코드리뷰의 중요성을 알고 있으며, 항상 소통하며 의견을 주고받습니다.
+                </span>
+              </Styled.Line>
+            )}
+            {currentLine >= 2 && (
+              <Styled.Line>
+                <span className="bold-text">꾸준함의 힘을 믿습니다.</span>
+                <br />
+                <span>
+                  매일 일기 쓰기 3년, 매일 운동하기 12년 차의 성실함을 살려 <br />
+                  현재 매주 블로그 포스팅 1개 이상, 매일 개발 서적 읽기를 실천하고 있습니다.
+                </span>
+              </Styled.Line>
+            )}
+            {currentLine >= 3 && (
+              <Styled.Line>
+                <span className="bold-text">새로운 일에 도전합니다.</span>
+                <br />
+                <span>
+                  컴포트 존(comfort zone)을 넘어 계속해서 새로운 분야에 도전합니다. <br />
+                  최근에는 사용자를 위한 UX와 프론트엔드 성능 개선을 공부하고 있습니다.
+                </span>
+              </Styled.Line>
+            )}
+            {currentLine >= 4 && (
+              <Styled.Line>
+                <span className="bold-text">필요한 사람이 되고자 노력합니다.</span>
+                <br />
+                <span>
+                  {' '}
+                  언제 어디에서나, 누구든지 먼저 찾는 사람이 되고 싶습니다. <br />
+                  실력적으로도, 인간적으로도 인정받는 사람이 되고자 합니다.
+                </span>
+              </Styled.Line>
+            )}
           </Styled.LinesContainer>
         )}
       </Styled.Container>

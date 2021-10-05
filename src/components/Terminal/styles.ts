@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import PALETTE from 'constants/palette';
 
 const Root = styled.section`
-  max-height: 32rem;
+  height: 100%;
   padding: 2rem;
   margin-top: 20px;
 
@@ -18,9 +18,9 @@ const Container = styled.div`
   max-width: 960px;
   margin: 0 auto;
   background-color: ${PALETTE.TERMINAL_BLACK};
-  min-height: 20rem;
+  min-height: 30rem;
   border-radius: 12px;
-  padding: 3rem 1rem;
+  padding: 3rem 2rem 1.5rem;
   filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
 `;
 
@@ -98,9 +98,7 @@ const LinesContainer = styled.div`
 `;
 
 const Line = styled.div`
-  * {
-    font-size: 1.25rem;
-  }
+  margin-bottom: 12px;
 
   &::before {
     content: '>';
@@ -109,6 +107,10 @@ const Line = styled.div`
     font-weight: bold;
     font-size: 1.25rem;
     margin: 0.35rem;
+  }
+
+  & .bold-text {
+    font-family: 'D2 Coding Bold', sans-serif;
   }
 `;
 
