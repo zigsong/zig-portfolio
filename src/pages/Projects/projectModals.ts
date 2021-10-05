@@ -21,6 +21,19 @@ import ahreallyImage04 from 'assets/modalImages/ahreally/04.png';
 import ahreallyImage05 from 'assets/modalImages/ahreally/05.png';
 import ahreallyImage06 from 'assets/modalImages/ahreally/06.png';
 
+import jurineeImage01 from 'assets/modalImages/jurinee/01.jpg';
+import jurineeImage02 from 'assets/modalImages/jurinee/02.jpg';
+import jurineeImage03 from 'assets/modalImages/jurinee/03.jpg';
+import jurineeImage04 from 'assets/modalImages/jurinee/04.jpg';
+import jurineeImage05 from 'assets/modalImages/jurinee/05.png';
+import jurineeImage06 from 'assets/modalImages/jurinee/06.png';
+
+import streetcatImage01 from 'assets/modalImages/streetcat/01.jpg';
+import streetcatImage02 from 'assets/modalImages/streetcat/02.jpg';
+import streetcatImage03 from 'assets/modalImages/streetcat/03.jpg';
+import streetcatImage04 from 'assets/modalImages/streetcat/04.jpg';
+import streetcatImage05 from 'assets/modalImages/streetcat/05.jpg';
+
 export const noltoModal = {
   id: 1,
   title: '🧸 놀토: 놀러오세요 토이프로젝트',
@@ -132,5 +145,53 @@ export const ahreallyModal = {
     ahreallyImage04,
     ahreallyImage05,
     ahreallyImage06,
+  ],
+};
+
+export const jurineeModal = {
+  id: 5,
+  title: '💸 주린이를 위한 안내서',
+  stacks: ['python', 'JavaScript', 'RubyOnRails'],
+  githubUrl: 'https://github.com/aeri206/web-programming-team7',
+  intro:
+    '진짜 주식 초보, 주린이를 위한 백과사전!\n주식 관련 용어부터 주식 대가들의 투자까지 한눈에 살펴보고, 직접 조건을 선택하여 알맞은 기업을 스크리닝해볼 수 있습니다.',
+  members: ['2020-1 웹프로그래밍개론 강의 팀원 5인'],
+  roles: [
+    '프론트엔드(react.js)/ 백엔드(ruby on rails) 풀스택',
+    '기업 찜하기(좋아요) 기능',
+    '페이지 메모 기능',
+    '마이페이지, 찜한 기업 모아보기 기능',
+    '기업 스크리닝 기능',
+  ],
+  previews: [
+    jurineeImage01,
+    jurineeImage02,
+    jurineeImage03,
+    jurineeImage04,
+    jurineeImage05,
+    jurineeImage06,
+  ],
+};
+
+export const streetcatModal = {
+  id: 6,
+  title: '🐱 대동길냥여지도',
+  stacks: ['swift'],
+  githubUrl: 'https://github.com/zigsong/ios-streetcat',
+  intro:
+    '추위에 떠는 전국의 길냥이들.\n인간들의 마음을 따뜻하게 녹여주는 길냥이들의 위치를 등록하고 내 길냥이를 찜해보세요!',
+  members: ['2019-2 인터페이스프로그래밍 강의 팀원 5인'],
+  roles: [
+    'MapKit을 이용한 Google 지도 표시',
+    'CLLocation 기반 길냥이 위치 표시',
+    '길냥이 데이터를 json encoding하여 디바이스에 저장',
+    '길냥이 색상 선택 및 이름 변경',
+  ],
+  previews: [
+    streetcatImage01,
+    streetcatImage02,
+    streetcatImage03,
+    streetcatImage04,
+    streetcatImage05,
   ],
 };

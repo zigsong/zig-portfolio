@@ -5,7 +5,14 @@ import noltoImg from 'assets/pj-nolto.png';
 import stockImg from 'assets/pj-stock.jpeg';
 import streetcatsImg from 'assets/pj-streetcats.jpeg';
 import tarotImg from 'assets/pj-tarot.png';
-import { noltoModal, moariModal, tarotModal, ahreallyModal } from './projectModals';
+import {
+  noltoModal,
+  moariModal,
+  tarotModal,
+  ahreallyModal,
+  jurineeModal,
+  streetcatModal,
+} from './projectModals';
 
 export default [
   {
@@ -47,7 +54,7 @@ export default [
     description:
       '주식 용어부터 대가들의 투자까지 한눈에 살펴보고, 조건을 선택하여 기업을 스크리닝해볼 수 있습니다.',
     stacks: ['python', 'javascript', 'ruby-on-rails'],
-    modalContent: noltoModal,
+    modalContent: jurineeModal,
   },
   {
     id: 6,
@@ -56,14 +63,6 @@ export default [
     description:
       '인간들의 마음을 따뜻하게 녹여주는 길냥이들의 위치를 등록하고 내 길냥이를 찜해보세요!',
     stacks: ['swift'],
-    modalContent: noltoModal,
-  },
-  {
-    id: 7,
-    image: hanguelImg,
-    title: '훈민정음 게임',
-    description: '랜덤 비처럼 내려오는 한글 초성에 맞는 단어를 입력하여 점수를 얻는 동시접속 게임',
-    stacks: ['javascript', 'react.js', 'firebase'],
-    modalContent: noltoModal,
+    modalContent: streetcatModal,
   },
 ];
