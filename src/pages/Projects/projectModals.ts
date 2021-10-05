@@ -4,6 +4,23 @@ import noltoImage03 from 'assets/modalImages/nolto/03.png';
 import noltoImage04 from 'assets/modalImages/nolto/04.png';
 import noltoImage05 from 'assets/modalImages/nolto/05.png';
 
+import moariImage01 from 'assets/modalImages/moari/01.png';
+import moariImage02 from 'assets/modalImages/moari/02.png';
+import moariImage03 from 'assets/modalImages/moari/03.png';
+import moariImage04 from 'assets/modalImages/moari/04.png';
+
+import tarotImage01 from 'assets/modalImages/tarot/01.png';
+import tarotImage02 from 'assets/modalImages/tarot/02.png';
+import tarotImage03 from 'assets/modalImages/tarot/03.png';
+import tarotImage04 from 'assets/modalImages/tarot/04.png';
+
+import ahreallyImage01 from 'assets/modalImages/ahreally/01.png';
+import ahreallyImage02 from 'assets/modalImages/ahreally/02.png';
+import ahreallyImage03 from 'assets/modalImages/ahreally/03.png';
+import ahreallyImage04 from 'assets/modalImages/ahreally/04.png';
+import ahreallyImage05 from 'assets/modalImages/ahreally/05.png';
+import ahreallyImage06 from 'assets/modalImages/ahreally/06.png';
+
 export const noltoModal = {
   id: 1,
   title: '🧸 놀토: 놀러오세요 토이프로젝트',
@@ -51,4 +68,69 @@ export const noltoModal = {
     '현재 <b>성능 개선</b>을 위한 추가 작업 중이며, React Profiler를 도입하여 렌더링을 최적화할 수 있는 방법을 고민중입니다.',
   ],
   previews: [noltoImage01, noltoImage02, noltoImage03, noltoImage04, noltoImage05],
+};
+
+export const moariModal = {
+  id: 2,
+  title: '🌱 모아리: 모여라 동아리!',
+  stacks: ['TypeScript', 'React.js', 'express', 'redux', 'redux-saga', 'mongoDB'],
+  githubUrl: 'https://github.com/h-yes-oo/moari',
+  intro:
+    '모여라, 동아리!\n각 대학의 동아리를 한 눈에 모아보고, 조건에 맞게 검색할 수 있습니다.\n동아리 담당자를 대신하여 홍보와 리크루팅까지 해주는 서비스입니다.',
+  members: ['멋쟁이사자처럼 8기 운영진 2인'],
+  roles: [
+    '프론트엔드(react.js)/ 백엔드(express, mongoDB) 풀스택 ',
+    '로그인/검색 결과 페이지/상세 페이지 UI 디자인',
+    '메인 페이지 carousel 및 전체 마크업',
+    '동아리 등록 페이지',
+    '동아리 검색 및 필터링 기능',
+    '동아리 좋아요 기능',
+  ],
+  previews: [moariImage01, moariImage02, moariImage03, moariImage04],
+};
+
+export const tarotModal = {
+  id: 3,
+  title: '🃏 주식 타로',
+  stacks: ['TypeScript', 'React.js', 'RStudio'],
+  githubUrl: 'https://github.com/zigsong/visualization-team-B',
+  deployUrl: 'https://visualization-b.netlify.app/',
+  intro: '공부해도 모르겠는 주식, 타로카드로 당신의 주식 금전운을 점쳐드립니다!',
+  members: ['2021-1 비주얼라이제이션 강의 팀원 3인'],
+  roles: [
+    '프론트엔드 전체',
+    '30개의 기업 카드 랜덤 분배',
+    '선택한 3장의 카드에 맞는 기업 차트 데이터 제공',
+    '페이지 슬라이드 구현',
+  ],
+  previews: [tarotImage01, tarotImage02, tarotImage03, tarotImage04],
+};
+
+export const ahreallyModal = {
+  id: 4,
+  title: '🙄 아진짜요?',
+  stacks: ['p5js', 'ml5js'],
+  githubUrl: 'https://github.com/zigsong/Ah-Really',
+  deployUrl: 'https://zigsong.github.io/Ah-Really/',
+  intro:
+    '인기 아이돌인 당신은 팬들을 향한 무성의한 인성논란에 휩싸이게 된다.\n마지막 기회인 팬사인회, 과연 당신은 팬들의 탈덕을 막고 인성 갑 아이돌로 거듭날 수 있을 것인가?',
+  members: ['2020-1 정보문화기술입문 강의 팀원 5인'],
+  roles: [
+    '프론트엔드 전반, 팀장',
+    '팬사인회 참여 팬 캐릭터 랜덤 등장',
+    'ml5js를 활용한 신체 움직임 데이터 정보 사전 입력',
+    '스테이지 5 - 팬이 준 선물 기억하기',
+    '스테이지 6  -주어진 이미지에 맞는 포즈 취하기',
+    '전체 스테이지 합치기',
+    '타이머 구현',
+    '배경음 삽입',
+  ],
+  previews: [
+    ahreallyImage01,
+    ahreallyImage02,
+    ahreallyImage03,
+    ahreallyImage04,
+    ahreallyImage05,
+    ahreallyImage06,
+  ],
 };

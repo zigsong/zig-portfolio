@@ -5,7 +5,7 @@ import noltoImg from 'assets/pj-nolto.png';
 import stockImg from 'assets/pj-stock.jpeg';
 import streetcatsImg from 'assets/pj-streetcats.jpeg';
 import tarotImg from 'assets/pj-tarot.png';
-import { noltoModal } from './projectModals';
+import { noltoModal, moariModal, tarotModal, ahreallyModal } from './projectModals';
 
 export default [
   {
@@ -22,15 +22,15 @@ export default [
     title: '모아리: 모여라 동아리!',
     description: '각 대학의 동아리를 한 눈에 모아보고, 조건에 맞게 검색할 수 있습니다.',
     stacks: ['TypeScrpit', 'React.js', 'redux', 'redux-saga', 'express', 'mongoDB'],
-    modalContent: noltoModal,
+    modalContent: moariModal,
   },
   {
     id: 3,
     image: tarotImg,
     title: '주식 타로',
     description: '공부해도 모르겠는 주식,\n타로카드로 당신의 주식 금전운을 점쳐드립니다!',
-    stacks: ['TypeScrpit', 'React.js'],
-    modalContent: noltoModal,
+    stacks: ['TypeScript', 'React.js'],
+    modalContent: tarotModal,
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export default [
     title: '아진짜요?',
     description: '인기 아이돌인 당신은 팬들을 향한 무성의한 인성논란에 휩싸이게 된다...',
     stacks: ['p5js', 'ml5js'],
-    modalContent: noltoModal,
+    modalContent: ahreallyModal,
   },
   {
     id: 5,

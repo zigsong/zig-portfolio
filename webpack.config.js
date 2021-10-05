@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
     publicPath: '/',
+    assetModuleFilename: 'images/[hash][ext][query]',
   },
   module: {
     rules: [
@@ -29,7 +30,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|webp|svg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'static/[name][ext]',
+          filename: 'static/[hash][ext][query]',
         },
       },
     ],
