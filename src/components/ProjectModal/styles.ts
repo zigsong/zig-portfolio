@@ -55,13 +55,21 @@ const Content = styled.div`
     }
   }
 
-  .preview {
+  & .preview {
     margin: auto;
     margin-bottom: 4px;
   }
 
   & div {
     white-space: pre-line;
+  }
+
+  & .learnings {
+    padding-right: 0.5rem;
+
+    & li {
+      margin-bottom: 0.25rem;
+    }
   }
 `;
 

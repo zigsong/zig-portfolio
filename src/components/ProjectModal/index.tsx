@@ -60,6 +60,16 @@ const ProjectModal = ({ content }: Props) => {
             </Styled.CheckList>
           </Styled.Content>
         </Styled.FlexContainer>
+        {content.learnings && (
+          <Styled.Content>
+            <Styled.CategoryTitle>🤔 고민한 내용</Styled.CategoryTitle>
+            <Styled.CheckList className="learnings">
+              {content.learnings.map((learning, idx) => (
+                <li key={idx}>{learning}</li>
+              ))}
+            </Styled.CheckList>
+          </Styled.Content>
+        )}
         <Styled.Content>
           <Styled.CategoryTitle className="preview">📺 미리보기</Styled.CategoryTitle>
           <Styled.PreviewWrapper>

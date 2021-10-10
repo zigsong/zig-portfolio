@@ -1,5 +1,4 @@
 import ahreallyImg from 'assets/pj-ahreally.png';
-import hanguelImg from 'assets/pj-hanguel.png';
 import moariImg from 'assets/pj-moari.png';
 import noltoImg from 'assets/pj-nolto.png';
 import stockImg from 'assets/pj-stock.jpeg';

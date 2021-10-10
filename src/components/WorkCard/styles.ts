@@ -72,6 +72,14 @@ const Branch = styled.div`
 const Content = styled.div`
   margin-left: 56px;
   margin-bottom: 0.5rem;
+
+  & a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const CategoryTitle = styled.div`

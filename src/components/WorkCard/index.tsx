@@ -74,7 +74,9 @@ const WorkCard = ({ image, title, period, intro, stacks, mains, learnings, site 
             <Styled.Branch />
             <Styled.Content>
               <Styled.CategoryTitle>사이트</Styled.CategoryTitle>
-              <div>{site}</div>
+              <a href={site} target="_blank">
+                {site}
+              </a>
             </Styled.Content>
           </div>
         </div>

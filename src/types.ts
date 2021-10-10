@@ -3,10 +3,10 @@ export interface ModalContent {
   title: string;
   stacks: string[];
   githubUrl: string;
-  deployUrl: string;
+  deployUrl?: string;
   intro: string;
   members: string[];
   roles: string[];
-  learnings: string[];
+  learnings?: string[];
   previews: string[];
 }
