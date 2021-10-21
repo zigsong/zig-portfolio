@@ -52,7 +52,7 @@ export const hoverUnderline = css`
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: ${PALETTE.DEFAULT_WHITE};
+    background-color: ${PALETTE.TERMINAL_BLACK};
     transform-origin: bottom center;
     transition: transform 0.1s ease-out;
   }
@@ -70,7 +70,7 @@ const NavContainer = styled.ul`
   justify-content: space-evenly;
 
   & a {
-    color: ${PALETTE.DEFAULT_WHITE};
+    color: ${PALETTE.TERMINAL_BLACK};
     font-size: 1.5rem;
     position: relative;
 

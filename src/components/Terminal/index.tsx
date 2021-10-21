@@ -38,7 +38,7 @@ const Terminal = () => {
           <Styled.DotButton color={PALETTE.BUTTON_GREEN} />
         </Styled.DotButtonsContainer>
         <Styled.CommandContainer>
-          <Styled.Command> zig</Styled.Command>
+          <Styled.Command>jieun</Styled.Command>
           <img src={terminalArrow} alt="terminal-arrow" />
           <Styled.Command>$ whoami</Styled.Command>
           <Styled.Cursor />
@@ -54,7 +54,7 @@ const Terminal = () => {
                 <br />
                 <span>
                   빨리 가려면 혼자 가고, 멀리 가려면 함께 가야 합니다. <br />
-                  코드리뷰의 중요성을 알고 있으며, 항상 소통하며 의견을 주고받습니다.
+                  팀의 목표를 가장 중시하며, 항상 소통하며 의견을 주고받습니다.
                 </span>
               </Styled.Line>
             )}
@@ -64,7 +64,7 @@ const Terminal = () => {
                 <br />
                 <span>
                   매일 일기 쓰기 3년, 매일 운동하기 12년 차의 성실함을 살려 <br />
-                  현재 매주 블로그 포스팅 1개 이상, 매일 개발 서적 읽기를 실천하고 있습니다.
+                  현재 매주 블로그 포스팅 1개 이상, 매일 개발 도서 읽기를 실천하고 있습니다.
                 </span>
               </Styled.Line>
             )}
@@ -83,9 +83,8 @@ const Terminal = () => {
                 <span className="bold-text">필요한 사람이 되고자 노력합니다.</span>
                 <br />
                 <span>
-                  {' '}
-                  언제 어디에서나, 누구든지 먼저 찾는 사람이 되고 싶습니다. <br />
-                  실력적으로도, 인간적으로도 인정받는 사람이 되고자 합니다.
+                  실력과 인간미를 모두 갖춘, 모두가 찾는 사람이 되고 싶습니다. <br />
+                  주변 사람들에게 도움을 주는 개발자가 되고자 합니다.
                 </span>
               </Styled.Line>
             )}

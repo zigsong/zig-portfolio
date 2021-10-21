@@ -112,6 +112,10 @@ const Line = styled.div`
   & .bold-text {
     font-family: 'D2 Coding Bold', sans-serif;
   }
+
+  &:not(.bold-text) {
+    line-height: 1.5rem;
+  }
 `;
 
 export default {

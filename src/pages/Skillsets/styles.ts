@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import PALETTE from 'constants/palette';
-
 const Root = styled.section`
   padding: 20px 0 48px;
   display: flex;
@@ -10,33 +8,46 @@ const Root = styled.section`
 `;
 
 const Container = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
+  width: 100%;
+  margin-top: 12px;
 `;
 
-const Sortation = styled.div`
+const MainStacksContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 640px;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  gap: 2.5rem;
+`;
+
+const StackWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  width: 33.3%;
-  min-height: 100%;
-  height: 100%;
+  gap: 0.25rem;
 
-  & h3 {
-    font-size: 24px;
+  & img {
+    max-width: 96px;
+    width: 100%;
+    max-height: 96px;
+    height: 100%;
+    object-fit: cover;
   }
 
-  & p {
-    color: ${PALETTE.DEFAULT_GRAY};
-    font-size: 14px;
+  & .stack-title {
+    font-size: 18px;
+    max-width: 108px;
+    text-align: center;
+    word-wrap: break-word;
+    font-weight: 700;
   }
 `;
 
-const ChipsContainer = styled.div`
-  margin-top: 1rem;
-`;
-
-export default { Root, Container, Sortation, ChipsContainer };
+export default {
+  Root,
+  Container,
+  MainStacksContainer,
+  StackWrapper,
+};

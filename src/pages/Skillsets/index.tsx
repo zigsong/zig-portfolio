@@ -3,8 +3,16 @@ import React from 'react';
 import ROUTES from 'constants/routes';
 import Card from 'components/Card';
 import LinkedTitle from 'components/LinkedTitle';
-import TechChip from 'components/TechChip';
 import Styled from './styles';
+import html5Img from 'assets/interest/html5.png';
+import css3Img from 'assets/interest/css3.png';
+import javascriptImg from 'assets/interest/javascript.png';
+import typescriptImg from 'assets/interest/typescript.png';
+import reactjsImg from 'assets/interest/reactjs.png';
+import babelImg from 'assets/interest/babel.png';
+import webpackImg from 'assets/interest/webpack.png';
+import scImg from 'assets/interest/styled-components.png';
+import rtlImg from 'assets/interest/rtl.png';
 
 const Skillsets = () => {
   return (
@@ -12,39 +20,44 @@ const Skillsets = () => {
       <LinkedTitle id={ROUTES.SKILLSET} text="Skillsets" link={`/#${ROUTES.SKILLSET}`} />
       <Card>
         <Styled.Container>
-          <Styled.Sortation>
-            <h3>4~5점</h3>
-            <p>자신있는 기술</p>
-            <Styled.ChipsContainer>
-              <TechChip text="HTML/CSS" />
-              <TechChip text="JavaScript" />
-              <TechChip text="TypeScript" />
-              <TechChip text="React.js" />
-            </Styled.ChipsContainer>
-          </Styled.Sortation>
-          <Styled.Sortation>
-            <h3>3점~</h3>
-            <p>프로젝트에 적용 가능한 기술</p>
-            <Styled.ChipsContainer>
-              <TechChip text="webpack" />
-              <TechChip text="express" />
-              <TechChip text="jest" />
-              <TechChip text="mongoDB" />
-            </Styled.ChipsContainer>
-          </Styled.Sortation>
-          <Styled.Sortation>
-            <h3>1~2점</h3>
-            <p>사용해본 기술</p>
-            <Styled.ChipsContainer>
-              <TechChip text="React Native" />
-              <TechChip text="Vue.js" />
-              <TechChip text="C++" />
-              <TechChip text="Java" />
-              <TechChip text="Django" />
-              <TechChip text="Ruby-on-Rails" />
-              <TechChip text="swift" />
-            </Styled.ChipsContainer>
-          </Styled.Sortation>
+          <Styled.MainStacksContainer>
+            <Styled.StackWrapper>
+              <img src={html5Img} alt="html5" />
+              <span className="stack-title">HTML5</span>
+            </Styled.StackWrapper>
+            <Styled.StackWrapper>
+              <img src={css3Img} alt="css3" />
+              <span className="stack-title">CSS3</span>
+            </Styled.StackWrapper>
+            <Styled.StackWrapper>
+              <img src={javascriptImg} alt="javascript" />
+              <span className="stack-title">JavaScript</span>
+            </Styled.StackWrapper>
+            <Styled.StackWrapper>
+              <img src={typescriptImg} alt="typescript" />
+              <span className="stack-title">TypeScript</span>
+            </Styled.StackWrapper>
+            <Styled.StackWrapper>
+              <img src={reactjsImg} alt="react" />
+              <span className="stack-title">React</span>
+            </Styled.StackWrapper>
+            <Styled.StackWrapper>
+              <img src={scImg} alt="styled-components" />
+              <span className="stack-title">styled-components</span>
+            </Styled.StackWrapper>
+            <Styled.StackWrapper>
+              <img src={rtlImg} alt="react-testing-library" />
+              <span className="stack-title">react-testing-library</span>
+            </Styled.StackWrapper>
+            <Styled.StackWrapper>
+              <img src={webpackImg} alt="webpack" />
+              <span className="stack-title">webpack</span>
+            </Styled.StackWrapper>
+            <Styled.StackWrapper>
+              <img src={babelImg} alt="babel" />
+              <span className="stack-title">babel</span>
+            </Styled.StackWrapper>
+          </Styled.MainStacksContainer>
         </Styled.Container>
       </Card>
     </Styled.Root>

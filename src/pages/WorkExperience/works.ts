@@ -8,7 +8,7 @@ export default [
     image: woowacourseImg,
     title: '우아한 테크코스(FE 3기)',
     period: '2021.02~',
-    intro: '웹 개발자 양성 프로그램',
+    intro: '웹 개발자 교육 프로그램',
     stacks: ['react.js', 'javascript', 'typescript', 'redux'],
     mains: [
       '미션기반의 코드리뷰와 상호 코드리뷰를 통한 성장의 경험',
