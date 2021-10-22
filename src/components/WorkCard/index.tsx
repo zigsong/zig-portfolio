@@ -28,14 +28,14 @@ const WorkCard = ({ image, title, period, intro, stacks, mains, learnings, site 
         </div>
         <Styled.Tree />
         <div>
-          <div>
+          <Styled.ContentWrapper>
             <Styled.Branch />
             <Styled.Content>
               <Styled.CategoryTitle>서비스 소개</Styled.CategoryTitle>
               <div>{intro}</div>
             </Styled.Content>
-          </div>
-          <div>
+          </Styled.ContentWrapper>
+          <Styled.ContentWrapper>
             <Styled.Branch />
             <Styled.Content>
               <Styled.CategoryTitle>사용 스택</Styled.CategoryTitle>
@@ -47,8 +47,8 @@ const WorkCard = ({ image, title, period, intro, stacks, mains, learnings, site 
                 ))}
               </Styled.StacksContainer>
             </Styled.Content>
-          </div>
-          <div>
+          </Styled.ContentWrapper>
+          <Styled.ContentWrapper>
             <Styled.Branch />
             <Styled.Content>
               <Styled.CategoryTitle>주요 업무</Styled.CategoryTitle>
@@ -58,8 +58,8 @@ const WorkCard = ({ image, title, period, intro, stacks, mains, learnings, site 
                 ))}
               </Styled.CheckList>
             </Styled.Content>
-          </div>
-          <div>
+          </Styled.ContentWrapper>
+          <Styled.ContentWrapper>
             <Styled.Branch />
             <Styled.Content>
               <Styled.CategoryTitle>배운 점 & 어려웠던 점</Styled.CategoryTitle>
@@ -69,8 +69,8 @@ const WorkCard = ({ image, title, period, intro, stacks, mains, learnings, site 
                 ))}
               </Styled.CheckList>
             </Styled.Content>
-          </div>
-          <div>
+          </Styled.ContentWrapper>
+          <Styled.ContentWrapper>
             <Styled.Branch />
             <Styled.Content>
               <Styled.CategoryTitle>사이트</Styled.CategoryTitle>
@@ -78,7 +78,7 @@ const WorkCard = ({ image, title, period, intro, stacks, mains, learnings, site 
                 {site}
               </a>
             </Styled.Content>
-          </div>
+          </Styled.ContentWrapper>
         </div>
       </Styled.Container>
     </Styled.Root>

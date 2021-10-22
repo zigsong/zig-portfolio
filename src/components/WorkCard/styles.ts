@@ -44,6 +44,10 @@ const Tree = styled.div`
   background: ${PALETTE.DEFAULT_GRAY};
 `;
 
+const ContentWrapper = styled.div`
+  margin-bottom: 1rem;
+`;
+
 const branchDot = css`
   content: '';
   position: absolute;
@@ -133,9 +137,10 @@ export default {
   ProfileContent,
   Title,
   Period,
-  Tree,
-  Branch,
   Content,
+  Tree,
+  ContentWrapper,
+  Branch,
   CategoryTitle,
   StacksContainer,
   CheckList,

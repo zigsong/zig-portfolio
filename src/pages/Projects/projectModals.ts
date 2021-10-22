@@ -37,6 +37,7 @@ import streetcatImage05 from 'assets/modalImages/streetcat/05.jpg';
 export const noltoModal = {
   id: 1,
   title: '🧸 놀토: 놀러오세요 토이프로젝트',
+  period: '2021.07~',
   stacks: [
     'TypeScript',
     'React.js',
@@ -90,6 +91,7 @@ export const noltoModal = {
 export const moariModal = {
   id: 2,
   title: '🌱 모아리: 모여라 동아리!',
+  period: '2020.08 ~ 2020.12',
   stacks: ['TypeScript', 'React.js', 'express', 'redux', 'redux-saga', 'mongoDB'],
   githubUrl: 'https://github.com/h-yes-oo/moari',
   intro:
@@ -109,11 +111,12 @@ export const moariModal = {
 export const tarotModal = {
   id: 3,
   title: '🃏 주식 타로',
+  period: '2021.03 ~ 2021.06',
   stacks: ['TypeScript', 'React.js', 'RStudio'],
   githubUrl: 'https://github.com/zigsong/visualization-team-B',
   deployUrl: 'https://visualization-b.netlify.app/',
   intro: '공부해도 모르겠는 주식, 타로카드로 당신의 주식 금전운을 점쳐드립니다!',
-  members: ['2021-1 비주얼라이제이션 강의 팀원 3인'],
+  members: ['기획 1인/데이터 분석 1인/프론트엔드 개발 1인'],
   roles: [
     '프론트엔드 전체',
     '30개의 기업 카드 랜덤 분배',
@@ -127,11 +130,12 @@ export const ahreallyModal = {
   id: 4,
   title: '🙄 아진짜요?',
   stacks: ['p5js', 'ml5js'],
+  period: '2020.03 ~ 2020.06',
   githubUrl: 'https://github.com/zigsong/Ah-Really',
   deployUrl: 'https://zigsong.github.io/Ah-Really/',
   intro:
     '인기 아이돌인 당신은 팬들을 향한 무성의한 인성논란에 휩싸이게 된다.\n마지막 기회인 팬사인회, 과연 당신은 팬들의 탈덕을 막고 인성 갑 아이돌로 거듭날 수 있을 것인가?',
-  members: ['2020-1 정보문화기술입문 강의 팀원 5인'],
+  members: ['기획 1인/디자인 1인/p5js 개발 3인'],
   roles: [
     '프론트엔드 전반, 팀장',
     '팬사인회 참여 팬 캐릭터 랜덤 등장',
@@ -155,11 +159,12 @@ export const ahreallyModal = {
 export const jurineeModal = {
   id: 5,
   title: '💸 주린이를 위한 안내서',
-  stacks: ['python', 'JavaScript', 'RubyOnRails'],
+  period: '2020.03 ~ 2020.6',
+  stacks: ['python', 'JavaScript', 'Ruby-on-Rails'],
   githubUrl: 'https://github.com/aeri206/web-programming-team7',
   intro:
     '진짜 주식 초보, 주린이를 위한 백과사전!\n주식 관련 용어부터 주식 대가들의 투자까지 한눈에 살펴보고, 직접 조건을 선택하여 알맞은 기업을 스크리닝해볼 수 있습니다.',
-  members: ['2020-1 웹프로그래밍개론 강의 팀원 5인'],
+  members: ['데이터 작성 2인/마크업 1인/풀스택 개발 2인'],
   roles: [
     '프론트엔드(react.js)/ 백엔드(ruby on rails) 풀스택',
     '기업 찜하기(좋아요) 기능',
@@ -180,11 +185,12 @@ export const jurineeModal = {
 export const streetcatModal = {
   id: 6,
   title: '🐱 대동길냥여지도',
+  period: '2019.09 ~ 2019.12',
   stacks: ['swift'],
   githubUrl: 'https://github.com/zigsong/ios-streetcat',
   intro:
     '추위에 떠는 전국의 길냥이들.\n인간들의 마음을 따뜻하게 녹여주는 길냥이들의 위치를 등록하고 내 길냥이를 찜해보세요!',
-  members: ['2019-2 인터페이스프로그래밍 강의 팀원 5인'],
+  members: ['디자인 1인/개발 4인'],
   roles: [
     'MapKit을 이용한 Google 지도 표시',
     'CLLocation 기반 길냥이 위치 표시',

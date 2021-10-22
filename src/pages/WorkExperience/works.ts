@@ -21,7 +21,7 @@ export default [
       'redux 등 상태관리 툴의 필요성을 이해하고 직접 활용해보았습니다.',
       '성능 최적화, 웹접근성, SEO 등의 프론트엔드 역량을 키웠습니다.',
     ],
-    site: 'https://techcourse.woowahan.com/',
+    site: 'https://woowacourse.github.io/',
   },
   {
     id: 2,
@@ -56,9 +56,9 @@ export default [
       '분석 결과 데이터를 계산하여 제공',
     ],
     learnings: [
-      'react.js를 이용한 서비스 개발',
-      '페이지 간 사용자 입력 데이터의 전달',
-      'mobile-first의 웹앱 개발',
+      'React.js로 마크업과 기능을 개발했습니다.',
+      '사용자 입력 데이터를 저장하여 설문조사 결과를 보여주었습니다.',
+      'mobile first의 웹앱을 개발했습니다.',
     ],
     site: 'https://whonicorn.dbdlab.io/',
   },

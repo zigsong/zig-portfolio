@@ -11,31 +11,8 @@ const ProjectModal = ({ content }: Props) => {
   return (
     <Styled.Root>
       <Styled.Container>
-        <Styled.Title>{content.title}</Styled.Title>
-        <Styled.Content>
-          <Styled.CategoryTitle>⌨️ 사용 스택</Styled.CategoryTitle>
-          <Styled.StacksContainer>
-            {content.stacks.map((stack) => (
-              <li key={stack}>
-                <Stack text={stack} />
-              </li>
-            ))}
-          </Styled.StacksContainer>
-        </Styled.Content>
-        <Styled.FlexContainer>
-          <Styled.Content>
-            <Styled.CategoryTitle className="project-url">🛠 Github URL</Styled.CategoryTitle>
-            <a href={content.githubUrl} target="_blank">
-              {content.githubUrl}
-            </a>
-          </Styled.Content>
-          <Styled.Content>
-            <Styled.CategoryTitle className="project-url">🖥 Service URL</Styled.CategoryTitle>
-            <a href={content.deployUrl} target="_blank">
-              {content.deployUrl}
-            </a>
-          </Styled.Content>
-        </Styled.FlexContainer>
+        <h1>{content.title}</h1>
+        <Styled.Period>{content.period}</Styled.Period>
         <Styled.FlexContainer>
           <div className="content-wrapper">
             <Styled.Content>
@@ -60,6 +37,33 @@ const ProjectModal = ({ content }: Props) => {
             </Styled.CheckList>
           </Styled.Content>
         </Styled.FlexContainer>
+        <Styled.Content>
+          <Styled.CategoryTitle>⌨️ 사용 스택</Styled.CategoryTitle>
+          <Styled.StacksContainer>
+            {content.stacks.map((stack) => (
+              <li key={stack}>
+                <Stack text={stack} />
+              </li>
+            ))}
+          </Styled.StacksContainer>
+        </Styled.Content>
+        <Styled.FlexContainer>
+          <Styled.Content>
+            <Styled.CategoryTitle className="project-url">🛠 Github URL</Styled.CategoryTitle>
+            <a href={content.githubUrl} target="_blank">
+              {content.githubUrl}
+            </a>
+          </Styled.Content>
+          {content.deployUrl && (
+            <Styled.Content>
+              <Styled.CategoryTitle className="project-url">🖥 Service URL</Styled.CategoryTitle>
+              <a href={content.deployUrl} target="_blank">
+                {content.deployUrl}
+              </a>
+            </Styled.Content>
+          )}
+        </Styled.FlexContainer>
+
         {content.learnings && (
           <Styled.Content>
             <Styled.CategoryTitle>🤔 고민한 내용</Styled.CategoryTitle>
@@ -74,9 +78,9 @@ const ProjectModal = ({ content }: Props) => {
           <Styled.CategoryTitle className="preview">📺 미리보기</Styled.CategoryTitle>
           <Styled.PreviewWrapper>
             {content.previews.map((preview, idx) => (
-              <div className="preview-image" key={idx}>
+              <li className="preview-image" key={idx}>
                 <img src={preview} alt={`${content.title}-${idx}`} />
-              </div>
+              </li>
             ))}
           </Styled.PreviewWrapper>
         </Styled.Content>

@@ -27,11 +27,11 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Title = styled.h1`
+const Period = styled.span`
+  font-size: 14px;
   margin-bottom: 12px;
+  color: ${PALETTE.DEFAULT_GRAY};
 `;
-
-const RepresentImageWrapper = styled.div``;
 
 const FlexContainer = styled.div`
   width: 100%;
@@ -120,9 +120,10 @@ const CheckList = styled.ul`
 
 const PreviewWrapper = styled.ul`
   & .preview-image {
-    width: 480px;
+    width: 640px;
     height: auto;
     margin: auto;
+    margin-bottom: 1rem;
 
     & img {
       width: 100%;
@@ -134,8 +135,7 @@ const PreviewWrapper = styled.ul`
 export default {
   Root,
   Container,
-  Title,
-  RepresentImageWrapper,
+  Period,
   FlexContainer,
   Content,
   CategoryTitle,
