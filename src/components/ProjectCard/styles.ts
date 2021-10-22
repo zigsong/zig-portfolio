@@ -4,9 +4,9 @@ import TechChip from 'components/TechChip';
 import PALETTE from 'constants/palette';
 
 const Root = styled.div`
-  min-width: 376px;
+  min-width: 480px;
   width: 100%;
-  height: 274px;
+  height: 324px;
   border-radius: 4px;
   border: 1px solid ${PALETTE.BORDER_GRAY};
   position: relative;
@@ -54,9 +54,11 @@ const Content = styled.div`
   padding: 1rem 1.5rem;
   position: absolute;
   bottom: 0;
-  background: rgba(51, 51, 51, 0.4);
+  background: rgba(51, 51, 51, 0.6);
   backdrop-filter: blur(2px);
   border-radius: 0 0 4px 4px;
+  display: flex;
+  flex-direction: column;
 
   & * {
     color: ${PALETTE.DEFAULT_WHITE};
@@ -73,17 +75,18 @@ const Description = styled.p`
 `;
 
 const StacksContainer = styled.ul`
-  margin-top: 8px;
+  margin-top: auto;
   height: 28px;
   overflow-y: hidden;
+
+  & li {
+    display: inline-block;
+  }
 `;
 
 export const Stack = styled(TechChip)`
-  display: inline-block;
   font-size: 12px;
-  color: ${PALETTE.PRIMARY_VIOLET_HIGHLIGHT};
-  padding: 2px 6px;
-  margin: 2px;
+  color: ${PALETTE.PRIMARY_VIOLET_TEXT};
 `;
 
 export default { Root, Container, ImageWrapper, Content, Title, Description, StacksContainer };

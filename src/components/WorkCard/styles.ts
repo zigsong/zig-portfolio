@@ -116,7 +116,6 @@ const StacksContainer = styled.ul`
 
 export const Stack = styled(TechChip)`
   display: inline-block;
-  color: ${PALETTE.PRIMARY_VIOLET_HIGHLIGHT};
   padding: 2px 8px;
   margin: 0 2px;
 `;

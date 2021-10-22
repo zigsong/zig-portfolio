@@ -16,7 +16,7 @@ const Root = styled.section`
   }
 
   &::-webkit-scrollbar-thumb {
-    background: ${PALETTE.PRIMARY_VIOLET_HIGHLIGHT};
+    background: ${PALETTE.PRIMARY_VIOLET_TEXT};
     border-radius: 12px;
   }
 `;

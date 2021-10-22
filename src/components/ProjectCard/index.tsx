@@ -33,7 +33,9 @@ const ProjectCard = ({ image, title, description, stacks, modalContent }: Props)
               <Styled.Description>{description}</Styled.Description>
               <Styled.StacksContainer>
                 {stacks.map((stack, idx) => (
-                  <Stack key={idx} text={stack} />
+                  <li key={idx}>
+                    <Stack text={stack} />
+                  </li>
                 ))}
               </Styled.StacksContainer>
             </Styled.Content>

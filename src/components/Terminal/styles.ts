@@ -33,8 +33,8 @@ const DotButtonsContainer = styled.div`
 `;
 
 const DotButton = styled.div<{ color: string }>`
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background-color: ${({ color }) => color};
 `;
