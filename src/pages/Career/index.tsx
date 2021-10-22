@@ -6,7 +6,7 @@ import CareerCard from 'components/CareerCard';
 import Card from 'components/Card';
 import wtcImg from 'assets/wtc.png';
 import angelswingImg from 'assets/angelswing.png';
-import likelionImg from 'assets/likelion.png';
+import likelionImg from 'assets/likelion.jpg';
 import vonvonImg from 'assets/vonvon.png';
 import snuImg from 'assets/snu.png';
 import Styled from './styles';

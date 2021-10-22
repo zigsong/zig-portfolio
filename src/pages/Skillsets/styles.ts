@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Root = styled.section`
-  padding: 20px 0 48px;
+  padding: 20px 16px 48px;
   display: flex;
   flex-direction: column;
   align-items: center;

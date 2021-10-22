@@ -28,7 +28,7 @@ const ModalInner = styled.div`
   position: relative;
   margin: auto 2rem;
   display: inline-block;
-  max-width: 840px;
+  max-width: 960px;
   max-height: 660px;
   width: 100%;
   height: 100%;

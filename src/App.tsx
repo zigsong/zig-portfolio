@@ -9,18 +9,21 @@ import Career from 'pages/Career';
 import Projects from 'pages/Projects';
 import WorkExperience from 'pages/WorkExperience';
 import GlobalStyle from './Global.styles';
+import Styled from './App.styles';
 
 const App = () => {
   return (
     <Router>
       <GlobalStyle />
-      <Intro />
-      <Terminal />
-      <About />
-      <Skillsets />
-      <Career />
-      <Projects />
-      <WorkExperience />
+      <Styled.Root>
+        <Intro />
+        <Terminal />
+        <About />
+        <Skillsets />
+        <Projects />
+        <WorkExperience />
+        <Career />
+      </Styled.Root>
     </Router>
   );
 };

@@ -8,6 +8,7 @@ const Root = styled.div`
   width: 100%;
   height: 274px;
   border-radius: 4px;
+  border: 1px solid ${PALETTE.BORDER_GRAY};
   position: relative;
   overflow: hidden;
 
@@ -43,6 +44,7 @@ const ImageWrapper = styled.div`
     width: 100%;
     height: 100%;
     transition: transform 0.2s ease;
+    object-fit: cover;
   }
 `;
 
