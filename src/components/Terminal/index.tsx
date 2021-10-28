@@ -4,7 +4,6 @@ import PALETTE from 'constants/palette';
 import terminalArrow from 'assets/terminal_arrow.svg';
 import Styled from './styles';
 
-// REFACTOR: 컴포넌트 전체 리렌더링 방지
 const Terminal = () => {
   const [isCTAShowing, setCTAShowing] = useState(true);
   const [currentLine, setCurrentLine] = useState(0);
