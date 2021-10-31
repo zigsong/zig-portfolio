@@ -44,7 +44,7 @@ const Intro = () => {
             </li>
             <li>
               <HashLink smooth to={`/#${ROUTES.WORK}`}>
-                Work Experience
+                Work & Education
               </HashLink>
             </li>
           </Styled.NavContainer>

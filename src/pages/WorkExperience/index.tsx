@@ -10,7 +10,7 @@ import Styled from './styles';
 const WorkExperience = () => {
   return (
     <Styled.Root>
-      <LinkedTitle id={ROUTES.WORK} text="Work Experience" link={`/#${ROUTES.WORK}`} />
+      <LinkedTitle id={ROUTES.WORK} text="Work & Education" link={`/#${ROUTES.WORK}`} />
       <Card>
         <Styled.Container>
           {works.map((work) => (
