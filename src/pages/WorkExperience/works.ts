@@ -1,31 +1,9 @@
-import woowacourseImg from 'assets/woowacourse.jpeg';
 import angelswingImg from 'assets/angelswing-large.png';
 import dbdlabImg from 'assets/dbdlab.png';
 
 export default [
   {
     id: 1,
-    image: woowacourseImg,
-    title: '우아한 테크코스(FE 3기)',
-    period: '2021.02~',
-    intro: '웹 개발자 교육 프로그램',
-    stacks: ['react.js', 'javascript', 'typescript', 'redux'],
-    mains: [
-      '미션 기반의 코드리뷰와 상호 코드리뷰를 통한 성장',
-      '페어 프로그래밍에서 배우는 함께 자라기',
-      '팀 프로젝트를 통한 서비스 운영 경험',
-    ],
-    learnings: [
-      'JavaScript 기본기를 다지고 심화된 내용을 함께 토론하며 실제 코드에 적용시켜보았습니다.',
-      'React.js를 이용하여 서비스를 개발하고, 백엔드와 협업하여 서비스의 기획부터 배포 및 유지보수 단계까지 경험했습니다.',
-      'redux 등 상태관리 툴의 필요성을 이해하고 직접 활용해보았습니다.',
-      '성능 최적화, 웹접근성, SEO 개선 등의 프론트엔드 역량을 키웠습니다.',
-      '프레임워크를 사용하지 않고 SSR을 구현하여 서비스의 사용성을 높였습니다.',
-    ],
-    site: 'https://woowacourse.github.io/',
-  },
-  {
-    id: 2,
     image: angelswingImg,
     title: '엔젤스윙(인턴)',
     period: '2020.07~2020.09',
@@ -45,7 +23,7 @@ export default [
     site: '(건설업체별 계약형 플랫폼으로 서비스가 공개되지 않습니다.)',
   },
   {
-    id: 3,
+    id: 2,
     image: dbdlabImg,
     title: 'dbdlab(외주)',
     period: '2020.04',

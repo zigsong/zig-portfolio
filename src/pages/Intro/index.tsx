@@ -33,18 +33,23 @@ const Intro = () => {
               </HashLink>
             </li>
             <li>
-              <HashLink smooth to={`/#${ROUTES.CAREER}`}>
-                Career
-              </HashLink>
-            </li>
-            <li>
               <HashLink smooth to={`/#${ROUTES.PROJECTS}`}>
                 Projects
               </HashLink>
             </li>
             <li>
               <HashLink smooth to={`/#${ROUTES.WORK}`}>
-                Work & Education
+                Work Experiences
+              </HashLink>
+            </li>
+            <li>
+              <HashLink smooth to={`/#${ROUTES.ACTIVITIES}`}>
+                Activities
+              </HashLink>
+            </li>
+            <li>
+              <HashLink smooth to={`/#${ROUTES.CAREER}`}>
+                Career
               </HashLink>
             </li>
           </Styled.NavContainer>

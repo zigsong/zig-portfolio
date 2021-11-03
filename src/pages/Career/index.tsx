@@ -4,7 +4,7 @@ import ROUTES from 'constants/routes';
 import LinkedTitle from 'components/LinkedTitle';
 import CareerCard from 'components/CareerCard';
 import Card from 'components/Card';
-import wtcImg from 'assets/wtc.png';
+import wtcImg from 'assets/wtc.jpeg';
 import angelswingImg from 'assets/angelswing.png';
 import likelionImg from 'assets/likelion.jpg';
 import vonvonImg from 'assets/vonvon.png';

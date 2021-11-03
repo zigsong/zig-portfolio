@@ -18,7 +18,7 @@ const Container = styled.div`
   max-width: 960px;
   margin: 0 auto;
   background-color: ${PALETTE.TERMINAL_BLACK};
-  min-height: 32rem;
+  min-height: 33rem;
   border-radius: 12px;
   padding: 3rem 2rem 1.5rem;
   filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
