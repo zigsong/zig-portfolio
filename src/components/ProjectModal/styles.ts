@@ -111,6 +111,9 @@ export const Stack = styled(TechChip)`
 
 const CheckList = styled.ul`
   & > li {
+    white-space: pre-wrap;
+    tab-size: 4.5;
+
     &::before {
       content: '✔️';
       margin-right: 2px;

@@ -9,7 +9,6 @@ import css3Img from 'assets/interest/css3.png';
 import javascriptImg from 'assets/interest/javascript.png';
 import typescriptImg from 'assets/interest/typescript.png';
 import reactjsImg from 'assets/interest/reactjs.png';
-import babelImg from 'assets/interest/babel.png';
 import webpackImg from 'assets/interest/webpack.png';
 import scImg from 'assets/interest/styled-components.png';
 import rtlImg from 'assets/interest/rtl.png';
@@ -52,10 +51,6 @@ const Skillsets = () => {
             <Styled.StackWrapper>
               <img src={webpackImg} alt="webpack" />
               <span className="stack-title">webpack</span>
-            </Styled.StackWrapper>
-            <Styled.StackWrapper>
-              <img src={babelImg} alt="babel" />
-              <span className="stack-title">babel</span>
             </Styled.StackWrapper>
           </Styled.MainStacksContainer>
         </Styled.Container>
