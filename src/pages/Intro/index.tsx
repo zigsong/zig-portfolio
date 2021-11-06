@@ -17,7 +17,7 @@ const Intro = () => {
           <Styled.IntroText>
             <span className="bold">정</span>도 <span className="bold">궁금한 것</span>도{' '}
             <span className="bold">하고싶은 일</span>도 많습니다. <br />
-            빨리 가기보다는, 지치지 않고 멀리 가는 개발자의 삶을 꿈꿉니다.
+            빨리 가기보다는, 지치지 않고 멀리 가는 개발자를 꿈꿉니다.
           </Styled.IntroText>
         </Styled.IntroPannel>
         <nav>
@@ -37,11 +37,11 @@ const Intro = () => {
                 Projects
               </HashLink>
             </li>
-            <li>
+            {/* <li>
               <HashLink smooth to={`/#${ROUTES.WORK}`}>
                 Work Experiences
               </HashLink>
-            </li>
+            </li> */}
             <li>
               <HashLink smooth to={`/#${ROUTES.ACTIVITIES}`}>
                 Activities

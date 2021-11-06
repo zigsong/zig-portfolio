@@ -55,13 +55,13 @@ export default [
     stacks: ['python', 'javascript', 'ruby-on-rails'],
     modalContent: jurineeModal,
   },
-  {
-    id: 6,
-    image: streetcatsImg,
-    title: '대동길냥여지도',
-    description:
-      '인간들의 마음을 따뜻하게 녹여주는 길냥이들의 위치를 등록하고 내 길냥이를 찜해보세요!',
-    stacks: ['swift'],
-    modalContent: streetcatModal,
-  },
+  // {
+  //   id: 6,
+  //   image: streetcatsImg,
+  //   title: '대동길냥여지도',
+  //   description:
+  //     '인간들의 마음을 따뜻하게 녹여주는 길냥이들의 위치를 등록하고 내 길냥이를 찜해보세요!',
+  //   stacks: ['swift'],
+  //   modalContent: streetcatModal,
+  // },
 ];

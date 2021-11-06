@@ -11,7 +11,6 @@ export default [
     description:
       '코드리뷰, 페어프로그래밍, 함께 자라기, 팀 프로젝트와 서비스 운영 및 유지보수를 경험했습니다.',
     site: 'https://woowacourse.github.io/',
-    more: '#',
   },
   {
     id: 2,
