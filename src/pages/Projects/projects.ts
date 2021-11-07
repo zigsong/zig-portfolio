@@ -27,7 +27,7 @@ export default [
     image: moariImg,
     title: '모아리: 모여라 동아리!',
     description: '각 대학의 동아리를 한 눈에 모아보고, 조건에 맞게 검색할 수 있습니다.',
-    stacks: ['TypeScrpit', 'React.js', 'redux', 'redux-saga', 'express', 'mongoDB'],
+    stacks: ['TypeScript', 'React.js', 'redux', 'redux-saga', 'express', 'mongoDB'],
     modalContent: moariModal,
   },
   {

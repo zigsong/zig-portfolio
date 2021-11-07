@@ -111,12 +111,17 @@ export const Stack = styled(TechChip)`
 
 const CheckList = styled.ul`
   & > li {
-    white-space: pre-wrap;
-    tab-size: 4.5;
+    & .title {
+      font-weight: bold;
 
-    &::before {
-      content: '✔️';
-      margin-right: 2px;
+      &::before {
+        content: '✔️';
+        margin-right: 2px;
+      }
+    }
+
+    & .content {
+      margin-left: 1.15rem;
     }
   }
 `;
