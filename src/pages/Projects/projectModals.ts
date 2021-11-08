@@ -82,10 +82,8 @@ export const noltoModal = {
       '작은 단위의 컴포넌트부터 bottom-up 방식으로 개발하였으며, composition 방식을 이용하여 컴포넌트 재사용성을 높였습니다. 컴포넌트별로 storybook을 작성하여 UI 테스트를 진행했습니다.',
     'TypeScript 사용':
       '관심사별로 interface를 분리하여 확장 가능성을 고민했으며, type guard를 통해 안전한 타이핑을 지향했습니다.',
-    '프론트엔드 테스트':
-      'react-testing-library로 컴포넌트 기능별 unit 테스트 및 react-hooks-testing-library와 msw를 이용하여 react-query hook 테스트를 작성했습니다.',
-    '서버 상태 관리를 위한 react-query 사용':
-      '서버 상태 관리 및 api 요청과 응답의 틀을 마련하기 위해 react-query를 사용했습니다. custom error code를 매핑하여 http 에러 발생 시 HttpError 인스턴스에 알맞는 에러 메시지를 전달할 수 있도록 했습니다.',
+    'react-query 사용':
+      '서버 상태 관리 및 api 요청과 응답의 틀을 마련하기 위해 react-query를 사용했습니다. query를 hook으로 만들었으며, errorBoundary와 suspense 옵션을 사용하여 비동기 요청에 대한 응답을 AsyncBoundary로 관리했습니다.',
     'ErrorBoundary를 통한 에러 핸들링':
       'React의 Suspense와 Error Boundary를 결합한 AsyncBoundary를 만들어 http 통신에서의 로딩 및 에러 상황에 대응했습니다.',
     'snackbar 및 dialog로 유저에게 상황 안내':
