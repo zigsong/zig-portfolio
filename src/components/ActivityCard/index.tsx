@@ -25,14 +25,10 @@ const ActivityCard = ({ image, title, period, description, site, more }: Props) 
         <Styled.Description>{description}</Styled.Description>
         <Styled.Site>
           <img src={linkSvg} alt="사이트 바로가기" />
-          <span>{site}</span>
+          <a href={site} target="_blank">
+            {site}
+          </a>
         </Styled.Site>
-        {more && (
-          <Styled.More href={more}>
-            <span>자세히 보기</span>
-            <img src={linkImg} width="20px" alt="자세히 보기" />
-          </Styled.More>
-        )}
       </Styled.Container>
     </Styled.Root>
   );

@@ -44,13 +44,17 @@ const Description = styled.p`
   margin-top: 0.5rem;
 `;
 
-const Site = styled.a`
+const Site = styled.span`
   margin-top: 0.5rem;
   overflow: hidden;
   word-break: break-all;
 
-  &:hover {
-    text-decoration: underline;
+  & a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   & img {
