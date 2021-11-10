@@ -66,14 +66,14 @@ export const noltoModal = {
     '태그 자동완성 기능',
     '마이페이지 구현 및 알림 기능',
     '카카오톡 공유 기능',
-    '피드 업로드 시 마크다운 기능',
     '반응형 UI 구현',
     'hook 테스트 및 유닛 테스트',
     '번들 압축 및 webpack chunk를 통한 성능 최적화',
-    '이미지 파일 최적화',
     'express 서버를 이용한 SSR 구현',
     'refreshToken을 사용한 로그인',
     'SEO 및 웹접근성 개선',
+    '✨ 최고의 분위기 메이커',
+    '👑 노션 정리왕',
   ],
   learnings: {
     '디자인 및 기획':
@@ -81,7 +81,7 @@ export const noltoModal = {
     '재사용 가능한 컴포넌트':
       '작은 단위의 컴포넌트부터 bottom-up 방식으로 개발하였으며, composition 방식을 이용하여 컴포넌트 재사용성을 높였습니다. 컴포넌트별로 storybook을 작성하여 UI 테스트를 진행했습니다.',
     'TypeScript 사용':
-      '관심사별로 interface를 분리하여 확장 가능성을 고민했으며, type guard를 통해 안전한 타이핑을 지향했습니다.',
+      '관심사별로 interface를 분리하여 확장 가능성을 고민했으며, 안전한 타이핑을 할 수 있도록 type guard를 작성했습니다.',
     'react-query 사용':
       '서버 상태 관리 및 api 요청과 응답의 틀을 마련하기 위해 react-query를 사용했습니다. query를 hook으로 만들었으며, errorBoundary와 suspense 옵션을 사용하여 비동기 요청에 대한 응답을 AsyncBoundary로 관리했습니다.',
     'ErrorBoundary를 통한 에러 핸들링':

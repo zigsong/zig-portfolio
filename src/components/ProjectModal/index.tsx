@@ -66,7 +66,7 @@ const ProjectModal = ({ content }: Props) => {
 
         {content.learnings && (
           <Styled.Content>
-            <Styled.CategoryTitle>🤔 고민한&배운 내용</Styled.CategoryTitle>
+            <Styled.CategoryTitle>🤔 고민한 & 배운 내용</Styled.CategoryTitle>
             <Styled.CheckList className="learnings">
               {Object.entries(content.learnings).map(([title, content], idx) => (
                 <li key={idx}>
