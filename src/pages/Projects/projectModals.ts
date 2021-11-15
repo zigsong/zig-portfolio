@@ -79,29 +79,31 @@ export const noltoModal = {
     '디자인 및 기획':
       'UI디자인과 기획부터 모든 부분을 직접 만들었습니다. UI/UX 강의 수강 후 figma를 이용해서 서비스 UI를 그렸습니다. 자연스러운 transition과 animation들을 곳곳에 적용해보았습니다.',
     '재사용 가능한 컴포넌트':
-      '작은 단위의 컴포넌트부터 bottom-up 방식으로 개발하였으며, composition 방식을 이용하여 컴포넌트 재사용성을 높였습니다. 컴포넌트별로 storybook을 작성하여 UI 테스트를 진행했습니다.',
+      '작은 단위의 컴포넌트부터 bottom-up 방식으로 개발하였으며, 컴포넌트를 조합하여 재사용성을 높였습니다. 컴포넌트별로 storybook을 작성하여 UI 테스트를 진행했습니다.',
+    'webpack 설정':
+      'webpack config를 dev와 prod로 분리하였으며, 필요에 따라 Bundle analyze와 optimization을 수행하도록 작성했습니다.',
     'TypeScript 사용':
-      '관심사별로 interface를 분리하여 확장 가능성을 고민했으며, 안전한 타이핑을 할 수 있도록 type guard를 작성했습니다.',
+      '관심사별로 interface를 분리하고 확장이 용이하도록 구현하였으며, 에러 발생 시 에러의 형태를 분리해주기 위해 type guard를 해주었습니다.',
     'react-query 사용':
       '서버 상태 관리 및 api 요청과 응답의 틀을 마련하기 위해 react-query를 사용했습니다. query를 hook으로 만들었으며, errorBoundary와 suspense 옵션을 사용하여 비동기 요청에 대한 응답을 AsyncBoundary로 관리했습니다.',
     'ErrorBoundary를 통한 에러 핸들링':
-      'React의 Suspense와 Error Boundary를 결합한 AsyncBoundary를 만들어 http 통신에서의 로딩 및 에러 상황에 대응했습니다.',
+      'React의 Suspense와 Error Boundary를 결합한 AsyncBoundary를 만들어 http 통신에서의 로딩 및 에러 상황에 대응했습니다. 미처 대응하지 못한 에러는 Sentry 로깅 툴을 사용했습니다.',
     'snackbar 및 dialog로 유저에게 상황 안내':
       '에러 발생 시 사용자의 유연한 대처를 위해 ErrorFallback 페이지를 만들고, snackbar와 dialog를 제공하여 서비스 장애 상황에서 사용자가 문제를 인식하고 대처할 수 있게끔 구현했습니다.',
     'input debounce':
-      '기술스택 자동완성을 위한 백엔드 api 호출 시 http 요청 수를 조절하기 위해 debounce를 구현했습니다.',
+      '기술스택 자동완성을 위한 백엔드 api 호출 시 http 요청 수를 조절하여 성능과 유저 경험을 개선하기 위해 debounce를 구현했습니다.',
     '피드 인피니티 스크롤':
-      'IntersectionObserver를 이용하여 인피니티 스크롤을 구현했으며, 스크롤 도중에 새 피드가 추가되거나 삭제되더라도 정상적으로 피드의 로드가 가능하도록 API를 설계했습니다.',
+      'IntersectionObserver를 이용하여 인피니티 스크롤을 구현했으며, 스크롤 도중에 새 피드가 추가되거나 삭제되더라도 정상적으로 피드의 로드가 가능하도록 현재 피드 기준으로 다음 피드의 id부터 불러오게끔 API를 설계했습니다.',
     '성능 최적화 - 코드 스플리팅 및 이미지 용량 단축':
-      '성능 개선을 위해 번들 파일 최적화 및 loadable components를 이용한 코드 스플리팅을 구현했습니다. 사용자가 업로드하는 gif 이미지의 확장자를 mp4로 변경하여 FCP를 최대 1/10 수준으로 개선했습니다.',
+      '성능 개선을 위해 번들 파일 최적화 및 loadable components를 이용한 코드 스플리팅을 구현했습니다. 또 사용자가 업로드하는 gif 이미지의 확장자를 mp4로 변경하여 용량을 최대 1/10 수준으로 개선했습니다.',
     '성능 최적화 - 지표':
-      '코드 스플리팅, 이미지 최적화, SSR 적용을 통해 성능 점수를 73 ➡️ 92점으로 개선하고, 번들 크기를 564kB에서 200kB로 줄였습니다. FCP는 1초대로 개선하였습니다.',
+      '코드 스플리팅, 이미지 최적화, SSR 적용을 통해 성능 점수를 73 ➡️ 92점으로 개선하고, 번들 크기를 564kB에서 200kB로 줄였습니다. FCP는 4.7초에서 1.7초로 개선하였습니다.',
     'SSR 서버 구현과 nginx':
-      '페이지 초기 진입 속도와 SEO 개선을 위해 SSR을 적용했습니다. 직접 express 서버를 구축하였으며, nginx를 사용하여 https 포트 포워딩을 해주었습니다.',
+      '페이지 초기 진입 속도 향상과 SEO 개선을 위해 SSR을 적용했습니다. 직접 express 서버를 구축하였으며, nginx를 사용하여 https 포트 포워딩을 해주었습니다. SSR과 Suspense를 함께 사용하기 위해 React 18을 도입했으며, React의 hydrate을 이용하였습니다.',
     'refreshToken을 이용한 로그인':
-      '안전한 로그인을 위해 refreshToken을 cookie에 저장하고, 접속 중인 클라이언트 IP를 확인하여 express 프론트 서버와 백엔드 서버 사이 신뢰 가능한 통신을 구현했습니다.',
+      '안전한 로그인을 위해 만료일이 긴 refreshToken을 cookie에 저장하고, accessToken으로 서버와의 통신을 하도록 했습니다. 접속 중인 클라이언트 IP를 확인하여 express 프론트 서버와 백엔드 서버 사이 신뢰 가능한 통신을 구현했습니다.',
     '웹접근성 및 SEO 개선':
-      '시멘틱 태그 사용과 보조 텍스트 표시를 통해 웹접근성을 개선하였으며, React Helmet을 이용해 각 페이지에 적절한 title과 meta 태그를 작성하여 SEO 지표 100점을 달성했습니다.',
+      '시멘틱 태그 사용과 보조 텍스트 표시, headingsTop 등의 도구를 이용하여 웹접근성을 개선하였으며, React Helmet을 이용해 각 페이지에 적절한 title과 meta 태그를 작성하여 SEO 지표 100점을 달성했습니다.',
   },
   previews: [noltoImage01, noltoImage02, noltoImage03, noltoImage04, noltoImage05],
 };
