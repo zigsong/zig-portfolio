@@ -1,7 +1,7 @@
 import React from 'react';
 
 import linkSvg from 'assets/link.svg';
-import linkImg from 'assets/link.png';
+import refSvg from 'assets/link.png';
 import Styled from './styles';
 
 interface Props {
@@ -28,6 +28,14 @@ const ActivityCard = ({ image, title, period, description, site, more }: Props) 
           <a href={site} target="_blank">
             {site}
           </a>
+          {more && (
+            <div>
+              <img src={refSvg} alt="더보기" />
+              <a href={more} target="_blank">
+                자세히 보기
+              </a>
+            </div>
+          )}
         </Styled.Site>
       </Styled.Container>
     </Styled.Root>
