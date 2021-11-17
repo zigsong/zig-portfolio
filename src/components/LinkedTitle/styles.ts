@@ -2,13 +2,17 @@ import styled from 'styled-components';
 
 import PALETTE from 'constants/palette';
 
-const Root = styled.h2`
+const Root = styled.h2<{ isShowing: boolean }>`
   display: flex;
   align-items: center;
   position: relative;
   padding: 0 8px;
   transform: translateY(15px);
   z-index: 10;
+
+  opacity: ${({ isShowing }) => (isShowing ? 1 : 0)};
+  transform: ${({ isShowing }) => (isShowing ? 'translateY(15px)' : 'translateY(4rem)')};
+  transition: all 0.7s ease-in-out;
 
   & a {
     height: 28px;
