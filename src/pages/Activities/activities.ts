@@ -7,7 +7,7 @@ export default [
     id: 1,
     image: wtcImg,
     title: '우아한 테크코스\n(FE 3기)',
-    period: '2021.02~',
+    period: '2021.02~2021.11',
     description:
       '현업자 코드리뷰/ 페어프로그래밍/ 함께 자라기/ 팀 프로젝트와 서비스 운영 및 유지보수를 경험했습니다.',
     site: 'https://woowacourse.github.io/',
@@ -17,7 +17,7 @@ export default [
     id: 2,
     image: guelttoImg,
     title: '글또',
-    period: '2021.07~',
+    period: '2021.07~2022.01',
     description: '꾸준한 개발 블로그 작성을 통해 지속적인 학습과 개발 생태계에 기여하고 있습니다.',
     site: 'https://www.notion.so/zzsza/ac5b18a482fb4df497d4e8257ad4d516',
   },

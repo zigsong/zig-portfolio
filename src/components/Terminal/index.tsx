@@ -62,14 +62,14 @@ const Terminal = () => {
                 <span className="bold-text">꾸준함의 힘을 믿습니다.</span>
                 <br />
                 <span>
-                  매일 일기 쓰기 3년, 매일 운동하기 12년 차의 성실함을 살려 <br />
+                  매일 일기 쓰기 6년, 매일 운동하기 15년 차의 성실함을 살려 <br />
                   매주 블로그 포스팅 1개 이상, 매일 개발 도서 또는 아티클 읽기를 실천하고 있습니다.
                 </span>
               </Styled.Line>
             )}
             {currentLine >= 3 && (
               <Styled.Line>
-                <span className="bold-text">약속은 반드시 지킵니다.</span>
+                <span className="bold-text">사용자를 생각하며, 약속을 반드시 지킵니다.</span>
                 <br />
                 <span>
                   사용자에게 좋은 서비스를 제공하겠다는 책임감으로 주어진 문제는 반드시 해결합니다.{' '}

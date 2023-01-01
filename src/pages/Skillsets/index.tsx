@@ -12,6 +12,7 @@ import reactjsImg from 'assets/interest/reactjs.png';
 import webpackImg from 'assets/interest/webpack.png';
 import scImg from 'assets/interest/styled-components.png';
 import rtlImg from 'assets/interest/rtl.png';
+import nextjsImg from 'assets/interest/nextjs.png';
 
 const Skillsets = () => {
   return (
@@ -39,6 +40,10 @@ const Skillsets = () => {
             <Styled.StackWrapper>
               <img src={reactjsImg} alt="react" />
               <span className="stack-title">React</span>
+            </Styled.StackWrapper>
+            <Styled.StackWrapper>
+              <img src={nextjsImg} alt="next" />
+              <span className="stack-title">Next.js</span>
             </Styled.StackWrapper>
             <Styled.StackWrapper>
               <img src={scImg} alt="styled-components" />

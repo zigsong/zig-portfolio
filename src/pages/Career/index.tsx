@@ -5,6 +5,7 @@ import LinkedTitle from 'components/LinkedTitle';
 import CareerCard from 'components/CareerCard';
 import Card from 'components/Card';
 import wtcImg from 'assets/wtc.jpeg';
+import woowabrosImg from 'assets/woowabros.jpg';
 import angelswingImg from 'assets/angelswing.png';
 import likelionImg from 'assets/likelion.jpg';
 import vonvonImg from 'assets/vonvon.png';
@@ -19,9 +20,15 @@ const Career = () => {
         <Styled.Container>
           <Styled.Tree />
           <CareerCard
+            position="left"
+            title="우아한형제들 프론트엔드 개발자"
+            period="2022.01 ~ 현재"
+            image={woowabrosImg}
+          />
+          <CareerCard
             position="right"
             title="우아한테크코스 FE 3기"
-            period="2021.02 ~ 현재"
+            period="2021.02~2021.11"
             image={wtcImg}
           />
           <CareerCard
@@ -52,7 +59,7 @@ const Career = () => {
 
           <CareerCard
             position="right"
-            title="서울대학교 인류학과 입학"
+            title="서울대학교 인류학과 입학(졸)"
             period="2016.03"
             image={snuImg}
           />
