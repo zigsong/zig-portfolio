@@ -15,9 +15,9 @@ const Container = styled.div`
 const MainStacksContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  max-width: 640px;
   justify-content: center;
   width: 100%;
+  max-width: 640px;
   margin: 0 auto;
   gap: 2.5rem;
 `;

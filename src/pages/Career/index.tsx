@@ -10,6 +10,7 @@ import angelswingImg from 'assets/angelswing.png';
 import likelionImg from 'assets/likelion.jpg';
 import vonvonImg from 'assets/vonvon.png';
 import snuImg from 'assets/snu.png';
+import wtc6thImg from 'assets/wtc.webp';
 import Styled from './styles';
 
 const Career = () => {
@@ -19,6 +20,12 @@ const Career = () => {
       <Card>
         <Styled.Container>
           <Styled.Tree />
+          <CareerCard
+            position="right"
+            title="우아한테크코스 6기 리뷰어"
+            period="2024.02 ~ 2024.06"
+            image={wtc6thImg}
+          />
           <CareerCard
             position="left"
             title="우아한형제들 프론트엔드 개발자"
