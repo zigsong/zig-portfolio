@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import Styled, { Stack } from './styles';
 
@@ -9,7 +9,7 @@ interface Props {
   intro: string;
   stacks: string[];
   mains: string[];
-  learnings: string[];
+  learnings: { title: string; desc: ReactNode }[];
   site: string;
 }
 
@@ -62,12 +62,15 @@ const WorkCard = ({ image, title, period, intro, stacks, mains, learnings, site 
           <Styled.ContentWrapper>
             <Styled.Branch />
             <Styled.Content>
-              <Styled.CategoryTitle>배운 점 & 어려웠던 점</Styled.CategoryTitle>
-              <Styled.CheckList>
-                {learnings.map((learning, idx) => (
-                  <li key={idx}>{learning}</li>
+              <Styled.CategoryTitle>개발 경험</Styled.CategoryTitle>
+              <Styled.WorkDetails>
+                {learnings.map(({ title, desc }, idx) => (
+                  <li key={idx}>
+                    <div className="title">{title}</div>
+                    <div className="desc">{desc}</div>
+                  </li>
                 ))}
-              </Styled.CheckList>
+              </Styled.WorkDetails>
             </Styled.Content>
           </Styled.ContentWrapper>
           <Styled.ContentWrapper>

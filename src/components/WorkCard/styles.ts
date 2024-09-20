@@ -31,6 +31,7 @@ const ProfileContent = styled.div`
 const Title = styled.h3`
   font-size: 20px;
   width: 100%;
+  white-space: pre;
 `;
 
 const Period = styled.p`
@@ -129,6 +130,40 @@ const CheckList = styled.ul`
   }
 `;
 
+const WorkDetails = styled.ul`
+  & > li {
+    margin: 12px 0;
+
+    .title {
+      font-weight: 500;
+
+      &::before {
+        content: '✔️';
+        margin-right: 2px;
+      }
+    }
+
+    .desc {
+      margin-left: 1.25rem;
+      color: ${PALETTE.DEFAULT_GRAY};
+
+      > * {
+        margin: 4px 0;
+
+        &::before {
+          content: '·';
+          display: inline-block;
+          margin-right: 6px;
+        }
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+`;
+
 export default {
   Root,
   Container,
@@ -143,4 +178,5 @@ export default {
   CategoryTitle,
   StacksContainer,
   CheckList,
+  WorkDetails,
 };
