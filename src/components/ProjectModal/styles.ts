@@ -16,7 +16,7 @@ const Root = styled.section`
   }
 
   &::-webkit-scrollbar-thumb {
-    background: ${PALETTE.PRIMARY_VIOLET_TEXT};
+    background: ${PALETTE.DEFAULT_GREEN};
     border-radius: 12px;
   }
 `;
@@ -88,7 +88,7 @@ const CategoryTitle = styled.div`
     display: block;
     bottom: 4px;
     left: 0;
-    background-color: ${PALETTE.PRIMARY_VIOLET_HIGHLIGHT};
+    background-color: ${PALETTE.DEFAULT_GREEN};
     width: 100%;
     height: 6px;
     border-radius: 2px;
@@ -126,6 +126,21 @@ const CheckList = styled.ul`
   }
 `;
 
+const BulletList = styled.ul`
+  & > li {
+    &::before {
+      content: '·';
+      display: inline-block;
+      margin-right: 6px;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    color: ${PALETTE.HIGHLIGHT_GREEN};
+  }
+`;
+
 const PreviewWrapper = styled.ul`
   & .preview-image {
     width: 640px;
@@ -149,5 +164,6 @@ export default {
   CategoryTitle,
   StacksContainer,
   CheckList,
+  BulletList,
   PreviewWrapper,
 };

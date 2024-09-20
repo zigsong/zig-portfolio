@@ -1,3 +1,4 @@
+import PALETTE from 'constants/palette';
 import styled from 'styled-components';
 
 const Root = styled.section`
@@ -5,6 +6,7 @@ const Root = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: ${PALETTE.DEFAULT_BUTTER};
 `;
 
 const Container = styled.div``;

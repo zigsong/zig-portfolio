@@ -9,5 +9,6 @@ export interface ModalContent {
   members: string[];
   roles: string[];
   learnings?: Record<string, string>;
-  previews: string[];
+  previews?: string[];
+  etc?: any[];
 }

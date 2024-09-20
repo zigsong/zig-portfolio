@@ -1,13 +1,11 @@
 import styled, { css } from 'styled-components';
 
-import introBg from 'assets/intro-bg.png';
 import PALETTE from 'constants/palette';
 
 const Root = styled.section`
-  background-image: url(${introBg});
-  background-size: cover;
+  background-color: ${PALETTE.DEFAULT_BUTTER};
   height: 32rem;
-  padding: 8rem 2rem;
+  padding: 8rem 4rem;
 `;
 
 const Content = styled.div`

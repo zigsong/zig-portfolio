@@ -2,11 +2,11 @@ import React from 'react';
 
 import LinkedTitle from 'components/LinkedTitle';
 import Card from 'components/Card';
-import profileImg from 'assets/profile.png';
 import phoneSvg from 'assets/phone.svg';
 import emailSvg from 'assets/email.svg';
 import githubSvg from 'assets/github.svg';
 import pencilSvg from 'assets/pencil.svg';
+import profileImg from 'assets/about_profile.jpg';
 import ROUTES from 'constants/routes';
 import Styled from './styles';
 
@@ -31,7 +31,7 @@ const About = () => {
             </div>
           </Styled.Contact>
           <Styled.Profile>
-            <img src={profileImg} alt="profile" />
+            <img src={profileImg} width="240" alt="profile" />
           </Styled.Profile>
           <Styled.Archive>
             <h3>Archive</h3>

@@ -86,7 +86,7 @@ const StacksContainer = styled.ul`
 
 export const Stack = styled(TechChip)`
   font-size: 12px;
-  color: ${PALETTE.PRIMARY_VIOLET_TEXT};
+  color: ${PALETTE.HIGHLIGHT_GREEN};
 `;
 
 export default { Root, Container, ImageWrapper, Content, Title, Description, StacksContainer };

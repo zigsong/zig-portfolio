@@ -41,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
 
 
   html, body {
-    background-color: ${PALETTE.DEFAULT_BEIGE};
+    background-color: ${PALETTE.DEFAULT_GREEN};
     width: 100%;
     height: 100%;
   }

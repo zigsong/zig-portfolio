@@ -8,6 +8,7 @@ const Root = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: ${PALETTE.DEFAULT_BUTTER};
 `;
 
 const Container = styled.div`
@@ -19,6 +20,10 @@ const Container = styled.div`
 
 const Profile = styled.div`
   margin: 0 12px;
+
+  > img {
+    border-radius: 40%;
+  }
 `;
 
 const Contact = styled.div`

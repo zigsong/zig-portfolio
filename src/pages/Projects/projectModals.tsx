@@ -1,3 +1,5 @@
+import React from 'react';
+
 import noltoImage01 from 'assets/modalImages/nolto/01.png';
 import noltoImage02 from 'assets/modalImages/nolto/02.png';
 import noltoImage03 from 'assets/modalImages/nolto/03.png';
@@ -28,52 +30,49 @@ import jurineeImage04 from 'assets/modalImages/jurinee/04.jpg';
 import jurineeImage05 from 'assets/modalImages/jurinee/05.png';
 import jurineeImage06 from 'assets/modalImages/jurinee/06.png';
 
-import streetcatImage01 from 'assets/modalImages/streetcat/01.jpg';
-import streetcatImage02 from 'assets/modalImages/streetcat/02.jpg';
-import streetcatImage03 from 'assets/modalImages/streetcat/03.jpg';
-import streetcatImage04 from 'assets/modalImages/streetcat/04.jpg';
-import streetcatImage05 from 'assets/modalImages/streetcat/05.jpg';
-
-export const noltoModal = {
-  id: 1,
-  title: '🧸 놀토: 놀러오세요 토이프로젝트',
-  period: '2021.07~',
-  stacks: [
-    'TypeScript',
-    'React.js',
-    'react-query',
-    'react-testing-library',
-    'express',
-    'Java',
-    'Springboot',
-    'junit5',
-    'mariaDB',
-    'hibernate',
-    'aws',
-    'nginx',
-    'jenkins',
-    'sonarqube',
-    'docker',
-    'Redis',
+export const insidegramModal = {
+  id: 6,
+  title: '🔮 인사이드그램',
+  period: '2024.06~2024.08',
+  stacks: ['Supabase', 'flutter'],
+  githubUrl: 'https://github.com/zigsong/insidegram',
+  deployUrl: 'https://insidegram.vercel.app/',
+  intro: '나만의 감정이들과 대화하자, 인사이드그램',
+  members: ['2024 우아한스터디 - 프롬프트 엔지니어링 참여자 3인'],
+  roles: ['플러터 앱 개발', '감정이 학습 데이터셋 구축'],
+  learnings: {
+    '하이퍼클로바를 사용한 프롬프트 엔지니어링':
+      '하이퍼클로바X를 사용하여 감정 분석 모델을 학습시키고, 사용자의 입력에 적절한 답변을 생성하는 프롬프트 엔지니어링을 경험했습니다.',
+    'Flutter를 사용한 모바일 앱 개발':
+      '플러터를 사용하여 모바일 앱을 개발하였으며, 각 화면의 UI/UX를 디자인하고 네트워크 통신을 구현했습니다.',
+  },
+  etc: [
+    <a href="https://www.youtube.com/shorts/rA7Ip4IUl5w">시연 동영상</a>,
+    <a href="https://sunnyhada.notion.site/e39748e978f64cb5b3b2bd8f0610f932">프로젝트 제출물</a>,
+    <a href="https://zigsong.github.io/retrospective/insidegram-retrospective/">프로젝트 회고록</a>,
   ],
+};
+export const noltoModal = {
+  id: 5,
+  title: '🧸 놀토: 놀러오세요 토이프로젝트',
+  period: '2021.07~2021.11',
+  stacks: ['TypeScript', 'React.js', 'react-query', 'react-testing-library', 'express', 'jenkins'],
   githubUrl: 'https://github.com/woowacourse-teams/2021-nolto',
   deployUrl: 'https://nolto.app/',
   intro: '모두의 작고 소중한 토이프로젝트를 한눈에,\n놀러오세요 토이프로젝트!',
   members: ['우아한테크코스 3기 BE 교육생 4인', '우아한테크코스 3기 FE 교육생 2인'],
   roles: [
-    'UI 디자인 전체',
+    'UI 디자인',
     '제목/태그 검색 기능',
     '태그 자동완성 기능',
     '마이페이지 구현 및 알림 기능',
     '카카오톡 공유 기능',
-    '반응형 UI 구현',
+    '반응형 UI',
     'hook 테스트 및 유닛 테스트',
     '번들 압축 및 webpack chunk를 통한 성능 최적화',
     'express 서버를 이용한 SSR 구현',
     'refreshToken을 사용한 로그인',
     'SEO 및 웹접근성 개선',
-    '✨ 최고의 분위기 메이커',
-    '👑 노션 정리왕',
   ],
   learnings: {
     '디자인 및 기획':
@@ -109,7 +108,7 @@ export const noltoModal = {
 };
 
 export const moariModal = {
-  id: 2,
+  id: 4,
   title: '🌱 모아리: 모여라 동아리!',
   period: '2020.08 ~ 2020.12',
   stacks: ['TypeScript', 'React.js', 'express', 'redux', 'redux-saga', 'mongoDB'],
@@ -120,9 +119,9 @@ export const moariModal = {
   roles: [
     '프론트엔드(react.js)/ 백엔드(express, mongoDB) 풀스택',
     'mongoose를 이용한 DB Schema 설계',
-    '로그인/검색 결과 페이지/상세 페이지 UI 디자인',
+    '로그인/검색 결과 페이지 및 상세 페이지 UI 디자인',
     '메인 페이지 carousel 및 전체 마크업',
-    '동아리 등록 페이지',
+    '동아리 등록 지면',
     '동아리 검색 및 필터링 기능',
     '동아리 좋아요 기능',
   ],
@@ -167,7 +166,7 @@ export const tarotModal = {
 };
 
 export const ahreallyModal = {
-  id: 4,
+  id: 2,
   title: '🙄 아진짜요?',
   stacks: ['p5js', 'ml5js'],
   period: '2020.03 ~ 2020.06',
@@ -197,7 +196,7 @@ export const ahreallyModal = {
 };
 
 export const jurineeModal = {
-  id: 5,
+  id: 1,
   title: '💸 주린이를 위한 안내서',
   period: '2020.03 ~ 2020.6',
   stacks: ['python', 'JavaScript', 'Ruby-on-Rails'],
@@ -219,29 +218,5 @@ export const jurineeModal = {
     jurineeImage04,
     jurineeImage05,
     jurineeImage06,
-  ],
-};
-
-export const streetcatModal = {
-  id: 6,
-  title: '🐱 대동길냥여지도',
-  period: '2019.09 ~ 2019.12',
-  stacks: ['swift'],
-  githubUrl: 'https://github.com/zigsong/ios-streetcat',
-  intro:
-    '추위에 떠는 전국의 길냥이들.\n인간들의 마음을 따뜻하게 녹여주는 길냥이들의 위치를 등록하고 내 길냥이를 찜해보세요!',
-  members: ['디자인 1인/개발 4인'],
-  roles: [
-    'MapKit을 이용한 Google 지도 표시',
-    'CLLocation 기반 길냥이 위치 표시',
-    '길냥이 데이터를 json encoding하여 디바이스에 저장',
-    '길냥이 색상 선택 및 이름 변경',
-  ],
-  previews: [
-    streetcatImage01,
-    streetcatImage02,
-    streetcatImage03,
-    streetcatImage04,
-    streetcatImage05,
   ],
 };

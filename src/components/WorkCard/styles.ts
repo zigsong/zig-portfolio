@@ -100,7 +100,7 @@ const CategoryTitle = styled.div`
     display: block;
     bottom: 4px;
     left: 0;
-    background-color: ${PALETTE.PRIMARY_VIOLET_HIGHLIGHT};
+    background-color: ${PALETTE.DEFAULT_GREEN};
     width: 100%;
     height: 6px;
     border-radius: 2px;

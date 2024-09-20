@@ -11,6 +11,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: 2rem;
+  row-gap: 24px;
 `;
 
 const CardWrapper = styled.div`

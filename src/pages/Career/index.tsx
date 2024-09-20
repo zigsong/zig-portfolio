@@ -37,13 +37,6 @@ const Career = () => {
             period="2020.07~2020.09"
             image={angelswingImg}
           />
-          <CareerCard position="right" title="정보문화학 연합전공 시작" period="2020.02" />
-          <CareerCard
-            position="left"
-            title="멋쟁이사자처럼 8기 운영진"
-            period="2019.09~2020.08"
-            image={likelionImg}
-          />
           <CareerCard
             position="right"
             title="vonvon 기획 인턴"
@@ -52,15 +45,15 @@ const Career = () => {
           />
           <CareerCard
             position="left"
-            title="서울대학교 멋쟁이사자처럼 7기"
-            period="2019.03~2019.08"
+            title="서울대학교 멋쟁이사자처럼"
+            period="2019.03~2020.08"
             image={likelionImg}
           />
 
           <CareerCard
             position="right"
-            title="서울대학교 인류학과 입학(졸)"
-            period="2016.03"
+            title="서울대학교 인류학과"
+            period="2016.03~2021.08"
             image={snuImg}
           />
           <CareerCard position="left" title="이화여자외국어고 프랑스어과 졸업" period="2016.02" />
