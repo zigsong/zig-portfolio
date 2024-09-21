@@ -10,7 +10,7 @@ interface Props {
   stacks: string[];
   mains: string[];
   learnings: { title: string; desc: ReactNode }[];
-  site: string;
+  site: ReactNode;
 }
 
 const WorkCard = ({ image, title, period, intro, stacks, mains, learnings, site }: Props) => {
@@ -77,9 +77,7 @@ const WorkCard = ({ image, title, period, intro, stacks, mains, learnings, site 
             <Styled.Branch />
             <Styled.Content>
               <Styled.CategoryTitle>사이트</Styled.CategoryTitle>
-              <a href={site} target="_blank">
-                {site}
-              </a>
+              {site}
             </Styled.Content>
           </Styled.ContentWrapper>
         </div>

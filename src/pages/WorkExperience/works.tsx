@@ -68,7 +68,7 @@ export default [
               사내 워킹그룹에서 프로젝트를 수행하며 모노레포와 프론트 빌드 방식, 서버 batch
               job에서의 실수 경험 등의 내용을 담아 우아콘2023에서 세션 발표를 했습니다.
               <br />
-              <a href="https://www.woowacon.com/presentations?presentationId=610">
+              <a href="https://www.woowacon.com/presentations?presentationId=610" target="_blank">
                 우아콘2023: 웹프론트 개발자들을 위한 '우아한스펙트럼' 서비스 제작기
               </a>
             </div>
@@ -102,7 +102,7 @@ export default [
               배민셀프서비스 챗봇 개발 과제를 진행하며 HTTP 통신 채팅의 한계를 극복하기 위해 응답의
               반응성을 고민하여 개발했습니다.
               <br />
-              <a href="https://techblog.woowahan.com/16021/">
+              <a href="https://techblog.woowahan.com/16021/" target="_blank">
                 (관련 포스팅: 우아한 기술블로그 - 셀프서비스, 챗봇에게 물어보세요)
               </a>
             </div>
@@ -155,7 +155,11 @@ export default [
         ),
       },
     ],
-    site: 'https://self.baemin.com/',
+    site: (
+      <a href="https://self.baemin.com/" target="_blank">
+        https://self.baemin.com/,
+      </a>
+    ),
   },
   {
     id: 3,

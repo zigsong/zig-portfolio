@@ -47,9 +47,15 @@ export const insidegramModal = {
       '플러터를 사용하여 모바일 앱을 개발하였으며, 각 화면의 UI/UX를 디자인하고 네트워크 통신을 구현했습니다.',
   },
   etc: [
-    <a href="https://www.youtube.com/shorts/rA7Ip4IUl5w">시연 동영상</a>,
-    <a href="https://sunnyhada.notion.site/e39748e978f64cb5b3b2bd8f0610f932">프로젝트 제출물</a>,
-    <a href="https://zigsong.github.io/retrospective/insidegram-retrospective/">프로젝트 회고록</a>,
+    <a href="https://www.youtube.com/shorts/rA7Ip4IUl5w" target="_blank">
+      시연 동영상
+    </a>,
+    <a href="https://sunnyhada.notion.site/e39748e978f64cb5b3b2bd8f0610f932" target="_blank">
+      프로젝트 제출물
+    </a>,
+    <a href="https://zigsong.github.io/retrospective/insidegram-retrospective/" target="_blank">
+      프로젝트 회고록
+    </a>,
   ],
 };
 export const noltoModal = {
