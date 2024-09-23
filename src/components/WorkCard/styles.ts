@@ -7,6 +7,15 @@ const Root = styled.div``;
 
 const Container = styled.div`
   display: flex;
+  margin-bottom: 1rem;
+`;
+
+const LeftPannel = styled.div`
+  min-width: 152px;
+`;
+
+const RightPannel = styled.div`
+  margin-bottom: 1.5rem;
 `;
 
 const ImageWrapper = styled.div`
@@ -159,6 +168,7 @@ const WorkDetails = styled.ul`
 
       a {
         text-decoration: underline;
+        color: ${PALETTE.HIGHLIGHT_GREEN};
       }
     }
   }
@@ -167,6 +177,8 @@ const WorkDetails = styled.ul`
 export default {
   Root,
   Container,
+  LeftPannel,
+  RightPannel,
   ImageWrapper,
   ProfileContent,
   Title,
