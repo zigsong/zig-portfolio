@@ -52,7 +52,7 @@ const Career = () => {
 
           <CareerCard
             position="right"
-            title="서울대학교 인류학과"
+            title="서울대학교 인류학 & 정보문화학"
             period="2016.03~2021.08"
             image={snuImg}
           />
