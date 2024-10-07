@@ -63,7 +63,7 @@ const Terminal = () => {
           )}
           {currentLine >= 2 && (
             <Styled.Line>
-              <span className="bold-text">꾸준함의 힘을 믿습니다.</span>
+              <span className="bold-text">꾸준함의 힘을 믿으며, 반드시 성과로 증명합니다.</span>
               <br />
               <span>
                 매일 일기 쓰기 8년, 매일 영어 공부 3년, 매주 블로그 포스팅 4년 등 <br />
