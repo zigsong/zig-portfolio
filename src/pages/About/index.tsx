@@ -2,11 +2,11 @@ import React from 'react';
 
 import LinkedTitle from 'components/LinkedTitle';
 import Card from 'components/Card';
-import profileImg from 'assets/profile.png';
 import phoneSvg from 'assets/phone.svg';
 import emailSvg from 'assets/email.svg';
 import githubSvg from 'assets/github.svg';
 import pencilSvg from 'assets/pencil.svg';
+import profileImg from 'assets/about_profile.jpg';
 import ROUTES from 'constants/routes';
 import Styled from './styles';
 
@@ -26,23 +26,29 @@ const About = () => {
               </div>
               <div className="about-row">
                 <img src={emailSvg} alt="email" />
-                <a href="mailto:wldms5764@gmail.com">wldms5764@gmail.com</a>
+                <a href="mailto:wldms5764@gmail.com" target="_blank">
+                  wldms5764@gmail.com
+                </a>
               </div>
             </div>
           </Styled.Contact>
           <Styled.Profile>
-            <img src={profileImg} alt="profile" />
+            <img src={profileImg} width="240" alt="profile" />
           </Styled.Profile>
           <Styled.Archive>
             <h3>Archive</h3>
             <div>
               <div className="about-row">
                 <img src={githubSvg} alt="github" />
-                <a href="https://github.com/zigsong">https://github.com/zigsong</a>
+                <a href="https://github.com/zigsong" target="_blank">
+                  https://github.com/zigsong
+                </a>
               </div>
               <div className="about-row">
                 <img src={pencilSvg} alt="blog" />
-                <a href="https://zigsong.github.io/">https://zigsong.github.io/</a>
+                <a href="https://zigsong.github.io/" target="_blank">
+                  https://zigsong.github.io/
+                </a>
               </div>
             </div>
           </Styled.Archive>

@@ -33,7 +33,7 @@ const Root = styled.h2<{ isShowing: boolean }>`
     display: block;
     bottom: 5px;
     left: 0;
-    background-color: ${PALETTE.PRIMARY_VIOLET_HIGHLIGHT};
+    background-color: ${PALETTE.DEFAULT_GREEN};
     width: 100%;
     height: 10px;
     border-radius: 2px;

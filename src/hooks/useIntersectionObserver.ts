@@ -14,7 +14,7 @@ const useIntersectionObserver = (callback: () => void) => {
           }
         });
       },
-      { threshold: 0.5 },
+      { threshold: 0.3 },
     );
 
     observer.observe(targetElement.current);

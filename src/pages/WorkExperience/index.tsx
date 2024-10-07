@@ -13,10 +13,13 @@ const WorkExperience = () => {
       <LinkedTitle id={ROUTES.WORK} text="Work Experiences" link={`/#${ROUTES.WORK}`} />
       <Card>
         <Styled.Container>
-          {works.map((work) => (
-            <Styled.CardWrapper key={work.id}>
-              <WorkCard {...work} />
-            </Styled.CardWrapper>
+          {works.map((work, idx) => (
+            <>
+              <Styled.CardWrapper key={work.id}>
+                <WorkCard {...work} />
+              </Styled.CardWrapper>
+              {idx < works.length - 1 && <hr />}
+            </>
           ))}
         </Styled.Container>
       </Card>

@@ -8,7 +8,7 @@ import Skillsets from 'pages/Skillsets';
 import Career from 'pages/Career';
 import Projects from 'pages/Projects';
 import Activities from 'pages/Activities';
-// import WorkExperience from 'pages/WorkExperience';
+import WorkExperience from 'pages/WorkExperience';
 import GlobalStyle from './Global.styles';
 import Styled from './App.styles';
 
@@ -23,7 +23,7 @@ const App = () => {
         <Skillsets />
         <Projects />
         <Activities />
-        {/* <WorkExperience /> */}
+        <WorkExperience />
         <Career />
       </Styled.Root>
     </Router>

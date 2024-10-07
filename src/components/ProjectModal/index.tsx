@@ -29,7 +29,7 @@ const ProjectModal = ({ content }: Props) => {
             </Styled.Content>
           </div>
           <Styled.Content>
-            <Styled.CategoryTitle>👩‍💻 맡은 역할</Styled.CategoryTitle>
+            <Styled.CategoryTitle>👩‍💻 담당 역할</Styled.CategoryTitle>
             <Styled.CheckList>
               {content.roles.map((role, idx) => (
                 <li key={idx}>{role}</li>
@@ -38,7 +38,7 @@ const ProjectModal = ({ content }: Props) => {
           </Styled.Content>
         </Styled.FlexContainer>
         <Styled.Content>
-          <Styled.CategoryTitle>⌨️ 사용 스택</Styled.CategoryTitle>
+          <Styled.CategoryTitle>⌨️ 사용 기술</Styled.CategoryTitle>
           <Styled.StacksContainer>
             {content.stacks.map((stack) => (
               <li key={stack}>
@@ -66,7 +66,7 @@ const ProjectModal = ({ content }: Props) => {
 
         {content.learnings && (
           <Styled.Content>
-            <Styled.CategoryTitle>🤔 고민한 & 배운 내용</Styled.CategoryTitle>
+            <Styled.CategoryTitle>🤔 구현 세부</Styled.CategoryTitle>
             <Styled.CheckList className="learnings">
               {Object.entries(content.learnings).map(([title, content], idx) => (
                 <li key={idx}>
@@ -77,16 +77,30 @@ const ProjectModal = ({ content }: Props) => {
             </Styled.CheckList>
           </Styled.Content>
         )}
-        <Styled.Content>
-          <Styled.CategoryTitle className="preview">📺 미리보기</Styled.CategoryTitle>
-          <Styled.PreviewWrapper>
-            {content.previews.map((preview, idx) => (
-              <li className="preview-image" key={idx}>
-                <img src={preview} alt={`${content.title}-${idx}`} />
-              </li>
-            ))}
-          </Styled.PreviewWrapper>
-        </Styled.Content>
+
+        {content.etc && (
+          <Styled.Content>
+            <Styled.CategoryTitle>🎸 기타</Styled.CategoryTitle>
+            <Styled.BulletList className="etc">
+              {content.etc.map((content, idx) => (
+                <li key={idx}>{content}</li>
+              ))}
+            </Styled.BulletList>
+          </Styled.Content>
+        )}
+
+        {content.previews && (
+          <Styled.Content>
+            <Styled.CategoryTitle className="preview">📺 미리보기</Styled.CategoryTitle>
+            <Styled.PreviewWrapper>
+              {content.previews.map((preview, idx) => (
+                <li className="preview-image" key={idx}>
+                  <img src={preview} alt={`${content.title}-${idx}`} />
+                </li>
+              ))}
+            </Styled.PreviewWrapper>
+          </Styled.Content>
+        )}
       </Styled.Container>
     </Styled.Root>
   );

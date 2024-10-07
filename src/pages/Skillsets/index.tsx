@@ -8,10 +8,10 @@ import javascriptImg from 'assets/interest/javascript.png';
 import typescriptImg from 'assets/interest/typescript.png';
 import reactjsImg from 'assets/interest/reactjs.png';
 import webpackImg from 'assets/interest/webpack.png';
-import rtlImg from 'assets/interest/rtl.png';
 import nextjsImg from 'assets/interest/nextjs.png';
 import nestjsImg from 'assets/interest/nestjs.png';
 import flutterImg from 'assets/interest/flutter.png';
+import viteImg from 'assets/interest/vite.png';
 
 const Skillsets = () => {
   return (
@@ -37,16 +37,16 @@ const Skillsets = () => {
               <span className="stack-title">Next.js</span>
             </Styled.StackWrapper>
             <Styled.StackWrapper>
-              <img src={rtlImg} alt="react-testing-library" />
-              <span className="stack-title">react-testing-library</span>
-            </Styled.StackWrapper>
-            <Styled.StackWrapper>
               <img src={webpackImg} alt="webpack" />
               <span className="stack-title">webpack</span>
             </Styled.StackWrapper>
             <Styled.StackWrapper>
-              <img src={nestjsImg} alt="nestJS" />
-              <span className="stack-title">nest.js</span>
+              <img src={viteImg} alt="vite" />
+              <span className="stack-title">vite</span>
+            </Styled.StackWrapper>
+            <Styled.StackWrapper>
+              <img src={nestjsImg} alt="nestjs" />
+              <span className="stack-title">Nest.js</span>
             </Styled.StackWrapper>
             <Styled.StackWrapper>
               <img src={flutterImg} alt="flutter" />

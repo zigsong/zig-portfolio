@@ -7,6 +7,7 @@ const Root = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: ${PALETTE.DEFAULT_BUTTER};
 `;
 
 const Container = styled.div`
@@ -25,7 +26,7 @@ const Container = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    background: ${PALETTE.PRIMARY_VIOLET_HIGHLIGHT};
+    background: ${PALETTE.DEFAULT_GREEN};
     border-radius: 12px;
   }
 

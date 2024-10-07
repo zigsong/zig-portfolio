@@ -37,11 +37,11 @@ const Intro = () => {
                 Projects
               </HashLink>
             </li>
-            {/* <li>
+            <li>
               <HashLink smooth to={`/#${ROUTES.WORK}`}>
                 Work Experiences
               </HashLink>
-            </li> */}
+            </li>
             <li>
               <HashLink smooth to={`/#${ROUTES.ACTIVITIES}`}>
                 Activities

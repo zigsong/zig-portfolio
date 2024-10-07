@@ -69,7 +69,7 @@ const cursorBlinking = keyframes`
 const Cursor = styled.span`
   width: 2.5px;
   height: 1.45rem;
-  background-color: ${PALETTE.PRIMARY_VIOLET_BG};
+  background-color: ${PALETTE.DEFAULT_GREEN};
   animation: ${cursorBlinking} 0.8s infinite steps(2, end);
 `;
 
@@ -85,7 +85,7 @@ const scaling = keyframes`
 
 const CursorButton = styled.button<{ isShowing: boolean }>`
   display: ${({ isShowing }) => (isShowing ? 'block' : 'none')};
-  background-color: ${PALETTE.PRIMARY_VIOLET_BG};
+  background-color: ${PALETTE.DEFAULT_GREEN};
   margin-left: 0.5rem;
   color: ${PALETTE.TERMINAL_BLACK};
   padding: 0.25rem 0.5rem;
@@ -103,7 +103,7 @@ const Line = styled.div`
   &::before {
     content: '>';
     display: inline-block;
-    color: ${PALETTE.CMD_FUCHSIA};
+    color: ${PALETTE.DEFAULT_GREEN};
     font-weight: bold;
     font-size: 1.25rem;
     margin: 0.35rem;
@@ -111,6 +111,7 @@ const Line = styled.div`
 
   & .bold-text {
     font-family: 'D2 Coding Bold', sans-serif;
+    color: ${PALETTE.DEFAULT_GREEN};
   }
 
   &:not(.bold-text) {
