@@ -2,16 +2,82 @@ import React from 'react';
 
 import angelswingImg from 'assets/angelswing-large.png';
 import woowabrosImg from 'assets/woowabros.jpg';
+import tossImg from 'assets/toss.png';
 import spectrumImg from 'assets/spectrum.png';
 
 export default [
   {
-    id: 1,
+    id: 3,
+    works: [
+      {
+        image: tossImg,
+        title: '비바리퍼블리카(토스)\n- 론프로덕트팀',
+        period: '2025.03~',
+        intro: "대출 중개 서비스 '내게 맞는 대출 찾기'를 통해 대출에 혁신을 일으킨다.",
+        stacks: ['react.js', 'typescript', 'react-query', 'next.js'],
+        mains: ['복잡성을 낮춘 온라인 대출 서비스 제공', '지표 기반 내맞대 서비스의 해자 구축'],
+        learnings: [
+          {
+            title: '가심사 스크래핑 퍼널 개선',
+            desc: (
+              <>
+                <div>
+                  사업자 가심사 요청에 필요한 정부24 문서 추가 스크래핑 니즈에 발맞춰 디자이너와
+                  논의하여 인증 단계에서부터 스크래핑 단계까지 자연스러운 흐름으로 제품을 기획 및
+                  개발했습니다.
+                </div>
+                <div>
+                  키바나 로그를 활용한 지표 분석을 통해 사용자들이 이탈하는 지점을 파악하고,
+                  프론트에서의 비동기 병렬 처리 개수 제한 및 UI 개선을 통해 사용자가 딜레이를 덜
+                  느낄 수 있도록 개선했습니다.
+                </div>
+              </>
+            ),
+          },
+          {
+            title: '대출 퍼즐 미션 개발',
+            desc: (
+              <>
+                <div>
+                  CTR이 높은 퍼즐 미션을 대출 서비스에도 적용하여, 사용자 가심사 퍼널 진입률을 크게
+                  향상시켰습니다.
+                </div>
+                <div>
+                  각 미션 별 수행 완료 여부 체크 및 수행 후 되돌아왔을 때의 상태 업데이트를 세밀하게
+                  처리하여 서버 요청 리소스를 최소화하고, 유저 별 미션의 최신 상태를 유지할 수
+                  있도록 했습니다.
+                </div>
+              </>
+            ),
+          },
+          {
+            title: '월급날 분석 제품 런칭',
+            desc: (
+              <>
+                <div>
+                  대출 프로덕트의 신규 제품인 월급날 분석 서비스를 런칭하고, 지속적인 사용자
+                  모니터링을 통해 마이데이터 연결 유도 및 세그먼트 비대상자에게도 해당 제품을
+                  활성화할 수 있는 케이스를 고려하여 제품의 영향도를 높였습니다.
+                </div>
+                <div>
+                  카드 청구서 넛지 우선노출 기준의 3-4가지 복잡한 조건들을 정리하여, 우선순위에 맞는
+                  적합한 아이템을 노출할 수 있으면서 유지보수가 가능한 코드를 작성했습니다.
+                </div>
+              </>
+            ),
+          },
+        ],
+        site: '토스 > 대출 받기 > 가심사 퍼널 및 대출 관리 스킴',
+      },
+    ],
+  },
+  {
+    id: 2,
     works: [
       {
         image: woowabrosImg,
         title: '우아한형제들\n- 셀러셀프서비스팀',
-        period: '2022.01~',
+        period: '2022.01~2025.03',
         intro: '배달의민족 사장님을 위한 가게관리 서비스',
         stacks: ['react.js', 'typescript', 'mobx', 'react-query', 'pnpm'],
         mains: [
@@ -110,7 +176,7 @@ export default [
       },
       {
         title: '우아한형제들\n- 우아한스펙트럼\n(워킹그룹 겸업)',
-        period: '2022.05~',
+        period: '2022.05~2025.03',
         intro: '배달의민족 웹프론트엔드 개발자들의 기술 공유 플랫폼',
         stacks: ['react.js', 'typescript', 'react-query', 'vite', 'nest.js'],
         mains: ['웹프론트테크트리 리딩', '사내 프론트엔드 개발자들을 위한 서비스 제공'],
@@ -174,7 +240,7 @@ export default [
                   job에서의 실수 경험 등의 내용을 담아 우아콘2023에서 세션 발표를 했습니다.
                   <br />
                   <a
-                    href="https://www.woowacon.com/presentations?presentationId=610"
+                    href="https://www.2023.woowacon.com/presentations?presentationId=610"
                     target="_blank"
                   >
                     우아콘2023: 웹프론트 개발자들을 위한 '우아한스펙트럼' 서비스 제작기
@@ -189,7 +255,7 @@ export default [
     ],
   },
   {
-    id: 2,
+    id: 3,
     works: [
       {
         image: angelswingImg,

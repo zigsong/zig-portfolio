@@ -11,6 +11,7 @@ import likelionImg from 'assets/likelion.jpg';
 import vonvonImg from 'assets/vonvon.png';
 import snuImg from 'assets/snu.png';
 import wtc6thImg from 'assets/wtc.webp';
+import tossImg from 'assets/toss.png';
 import Styled from './styles';
 
 const Career = () => {
@@ -21,6 +22,12 @@ const Career = () => {
         <Styled.Container>
           <Styled.Tree />
           <CareerCard
+            position="left"
+            title="토스 프론트엔드 개발자"
+            period="2025.03 ~ 현재"
+            image={tossImg}
+          />
+          <CareerCard
             position="right"
             title="우아한테크코스 6기 리뷰어"
             period="2024.02 ~ 2024.06"
@@ -29,7 +36,7 @@ const Career = () => {
           <CareerCard
             position="left"
             title="우아한형제들 프론트엔드 개발자"
-            period="2022.01 ~ 현재"
+            period="2022.01 ~ 2025.03"
             image={woowabrosImg}
           />
           <CareerCard
